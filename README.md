@@ -6,4 +6,4 @@ Hello, I'm Ahmet Sahin. I am a computer science student. I will be taking CIS-10
 
 ## Assignment 2
 
-For my "Hello Name!" program, I will use Phyton because my friends told me that Phyton is for beginners. Also, I don't want to have a hard experience at the beginning to start my journey in learning. I will use Visual Studio Code for IDE because it gives many recommendations (in every app like Phyton) and has different color codes, making tracking easier.
+For my "Hello Name!" program, I will use the program called phyton because my friends told me that phyton is for beginners. Also, I don't want to have a hard experience at the beginning to start my journey in learning. I will use Visual Studio Code for IDE because it gives many recommendations (in every app like Phyton) and has different color codes, making tracking easier. As asd awda wd awd awd awd awd awd awd awd awd aw dawd awd awd awd awd aw dawd awd awd awd awd awd awd awd awd awd awd awd awd awd awd aw daw dawd awd w dawd awd awd awd awd awd awd aw aw dawd awd awd awd awd awd awd awd awd awd.
