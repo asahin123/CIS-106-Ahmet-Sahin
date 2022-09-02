@@ -4,10 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="i am a gamer bitch"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-09-01 10:37:07 PM"/>
+        <attribute name="saved" value="2022-09-01 10:40:29 PM"/>
         <attribute name="created" value="aSBhbSBhIGdhbWVyIGJpdGNoO0RFU0tUT1AtTjYzSThQTjsyMDIyLTA4LTMxOzA5OjUyOjEzIFBNOzM5MTc="/>
         <attribute name="edited" value="aSBhbSBhIGdhbWVyIGJpdGNoO0RFU0tUT1AtTjYzSThQTjsyMDIyLTA5LTAxOzEyOjAwOjE0IFBNOzc7NDAxNw=="/>
-        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDE7MTA6Mzc6MDcgUE07MTg7NDAzNQ=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDE7MTA6NDA6MjkgUE07MTg7NDAzMw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -15,7 +15,8 @@
             <declare name="Name" type="String" array="False" size=""/>
             <assign variable="name" expression="&quot;Ahmet!&quot;"/>
             <output expression="&quot;Hello  &quot; &amp; name" newline="True"/>
-            <declare name="Comments" type="String" array="False" size=""/>
         </body>
     </function>
 </flowgorithm>
+
+## Comments
