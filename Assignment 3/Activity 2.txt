@@ -1,4 +1,4 @@
-This program demonstrates arithmetic operations.
+This program demonstrates an arithmetic operation.
 Input:
 Declare integer a
 Declare integer b
