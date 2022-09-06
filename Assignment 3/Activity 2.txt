@@ -1,0 +1,8 @@
+This program converts an input Fahrenheit temperature to Celsius.
+Input:
+    Display prompt
+    Get Fahrenheit temperature
+Process:
+    Convert Fahrenheit temperature to Celsius
+Output:
+    Display Fahrenheit and Celsius temperatures
