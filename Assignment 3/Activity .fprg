@@ -1,1 +1,23 @@
 
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahmet Halid Sahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-06 04:14:26 PM"/>
+        <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDY7MDM6NTE6MDAgUE07Mzg2Nw=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDY7MDQ6MTQ6MjYgUE07MjszOTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program demonstrates an arithmetic operation"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="15"/>
+            <assign variable="b" expression="20"/>
+            <output expression="a+b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
