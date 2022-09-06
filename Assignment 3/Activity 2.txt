@@ -1,13 +1,9 @@
 This program demonstrates arithmetic operations
-Declare Integer a
-Declare Integer b
-Assign a = 15
-Assign b = 20
-Output "a = " & a
-Output "b = " & b
-Output "a + b = " & a + b
-Output "a - b = " & a - b
-Output "a * b = " & a * b
-Output "a / b = " & a / b
-Output "a % b = " & a % b
-End 
+Input:
+Declare integer a
+Declare integer b
+a=15 & b=20
+Process:
+Calculate a+b
+Output:
+Display a+b
