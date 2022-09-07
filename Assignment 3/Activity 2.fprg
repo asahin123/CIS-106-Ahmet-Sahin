@@ -1,13 +1,12 @@
-
 <?xml version="1.0"?>
 <flowgorithm fileversion="3.0">
     <attributes>
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ahmet Halid Sahin"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-09-07 12:21:15 AM"/>
+        <attribute name="saved" value="2022-09-07 12:27:50 AM"/>
         <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDY7MTA6MDg6MDAgUE07Mzg2Nw=="/>
-        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDc7MTI6MjE6MTUgQU07NTszOTY4"/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDc7MTI6Mjc6NTAgQU07MTA7NDAxNw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -29,7 +28,7 @@
             <output expression="&quot;years=&quot; &amp; years" newline="True"/>
             <output expression="&quot;months=&quot; &amp; years*months" newline="True"/>
             <output expression="&quot;days=&quot; &amp; years*days" newline="True"/>
-            <output expression="&quot;hours=&quot; &amp; years*days" newline="True"/>
+            <output expression="&quot;hours=&quot; &amp; years*hours" newline="True"/>
             <output expression="&quot;seconds=&quot; &amp; years*seconds" newline="True"/>
         </body>
     </function>
