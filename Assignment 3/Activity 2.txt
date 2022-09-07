@@ -1,8 +1,8 @@
-This program shows how old is a person in years,months,days,hours, and seconds.
+This program shows how old is a person expected in years,months,days,hours, and seconds.
 
 Input:
 
-Display age in years,months,days,hours, and seconds
+Display age expected in years,months,days,hours, and seconds
 
 Get age in years
 
@@ -12,4 +12,4 @@ Convert years to months,days,hours, and seconds
 
 Output:
 
-Display age
+Display the expected age in years,months,days,hours, and seconds.
