@@ -10,3 +10,6 @@ print("months=" + str(years * months))
 print("days=" + str(years * days))
 print("hours=" + str(years * days))
 print("seconds=" + str(years * seconds))
+
+## References
+https://www.youtube.com/watch?v=ogT550rGPiY
