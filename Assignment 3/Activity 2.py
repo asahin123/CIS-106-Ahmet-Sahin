@@ -8,8 +8,9 @@ seconds = 31556926
 print("years=" + str(years))
 print("months=" + str(years * months))
 print("days=" + str(years * days))
-print("hours=" + str(years * days))
+print("hours=" + str(years * hours))
 print("seconds=" + str(years * seconds))
+
 
 ## References
 https://www.youtube.com/watch?v=ogT550rGPiY
