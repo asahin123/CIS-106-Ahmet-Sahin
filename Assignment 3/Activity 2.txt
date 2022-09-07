@@ -1,4 +1,4 @@
-This program shows how old is a person expected age in years,months,days,hours, and seconds.
+This program shows a 24 year old in years,months,days,hours, and seconds.
 
 Input:
 
