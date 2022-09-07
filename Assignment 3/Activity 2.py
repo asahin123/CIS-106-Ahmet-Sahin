@@ -13,4 +13,3 @@ print("seconds=" + str(years * seconds))
 
 
 ## References
-youtube videos
