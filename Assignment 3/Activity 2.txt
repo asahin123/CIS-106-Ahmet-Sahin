@@ -1,14 +1,16 @@
-This program shows an expected age in years,months,days,hours, and seconds.
+This program shows an expected age in years, months, days, hours, and seconds.
 
 Input:
 
-    Display age expected in years,months,days,hours, and seconds
-
+    Display prompt
     Get age in years
 
 Process:
 
-    Convert years to months, days, hours, and seconds
+    Convert years to months
+    Convert years to days
+    Convert years to hours
+    Convert years to seconds
 
 Output:
 
