@@ -1,1 +1,35 @@
 
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahmet Halid Sahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-06 11:56:16 PM"/>
+        <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDY7MTA6MDg6MDAgUE07Mzg2Nw=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMDY7MTE6NTY6MTYgUE07MTszOTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program shows a 24 year old in years,months,days,hours, and seconds."/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="years" type="Integer" array="False" size=""/>
+            <declare name="months" type="Integer" array="False" size=""/>
+            <declare name="days" type="Integer" array="False" size=""/>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <declare name="seconds" type="Integer" array="False" size=""/>
+            <assign variable="years" expression="24"/>
+            <assign variable="months" expression="12"/>
+            <assign variable="days" expression="365"/>
+            <assign variable="hours" expression="8765.81277"/>
+            <assign variable="seconds" expression="31556926"/>
+            <output expression="&quot;age=24&quot;" newline="True"/>
+            <output expression="&quot;years=&quot; &amp; years" newline="True"/>
+            <output expression="&quot;months=&quot; &amp; years*months" newline="True"/>
+            <output expression="&quot;days=&quot; &amp; years*days" newline="True"/>
+            <output expression="&quot;hours=&quot; &amp; years*days" newline="True"/>
+            <output expression="&quot;seconds=&quot; &amp; years*seconds" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
