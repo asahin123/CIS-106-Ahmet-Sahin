@@ -1,0 +1,16 @@
+This program shows how to calculate the expected miles in kilometers, meters, and centimeters.
+
+Input:
+
+    Display prompt
+    Get distance in miles
+    
+Process:
+
+    Convert miles to kilometers
+    Convert miles to meters
+    Convert miles to centimeters
+    
+Output:
+
+    Display the expected miles in kilometers, meters, and centimeters.
