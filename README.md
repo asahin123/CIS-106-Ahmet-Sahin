@@ -11,3 +11,5 @@ For my "Hello Name!" program, I will use the program called because my friends t
 ## Assignment 3
 
 This assignment taught about how to use variables and to put them in the correct order. Using inputs and outputs to display whatever was needed. I selected the 2nd activity because I wanted to learn how to make arithmetic calculations and show them on a flowchart. I made a flowchart about age calculation and converted them into different variables such as years, months, days, hours, and seconds. My next goal is to make a detailed calculator that can calculate everything—for example, exponential numbers or limits. If there is no calculation, I want it to appear false if there are no possible calculations.  
+
+## Assignment 4
