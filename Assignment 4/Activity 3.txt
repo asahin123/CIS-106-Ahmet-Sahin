@@ -1,4 +1,4 @@
-This program shows how to calculate the expected miles in kilometers, meters, and centimeters.
+This program shows how to calculate the expected distance in kilometers, meters, and centimeters.
 
 Input:
 
