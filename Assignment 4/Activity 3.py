@@ -1,6 +1,6 @@
 # This program shows how to calculate the expected distance in milesi into kilometers, meters, and centimeters.
 
-miles = int(input())
+Expectingmiles = int(input())
 
 distance = miles
 kilometers = miles * 1.609344
