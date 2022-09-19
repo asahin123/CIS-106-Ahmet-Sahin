@@ -1,0 +1,83 @@
+This program shows how to calculate the expected distance in miles to kilometers, meters, and centimeters.
+
+Main Program
+
+    Get Miles
+    Calculate Kilometers
+    Calculate Meters
+    Calculate Centimeters
+    Display Result
+    
+Get Miles    
+
+    Parameters:
+    
+        None
+        
+    Process:
+    
+        Display Prompt
+        Get Distance in Miles
+        
+    Return Value:
+    
+        Distance in Miles
+       
+Calculate Kilometers
+
+    Parameters:
+    
+        Miles
+        
+    Process:
+    
+        Convert Distance in Miles to Kilometers
+        
+    Return Value:
+    
+        Distance in Kilometers
+        
+Calculate Meters
+
+    Parameters:
+    
+        Miles
+        
+    Process:
+    
+        Convert Distance in Miles to Meters
+        
+    Return Value:
+    
+        Distance in Meters
+        
+Calculate Centimeters
+
+    Parameters:
+    
+        Miles
+        
+    Process:
+    
+        Convert Distance in Miles to Centimeters
+        
+    Return Value:
+    
+        Distance in Centimeters
+        
+Display Result
+
+    Parameters:
+    
+        Distance in Miles
+        Distance in Kilometers
+        Distance in Meters
+        Distance in Centimeters
+        
+    Process:
+    
+        Display distance in miles to kilometers, meters, and centimeters.
+        
+    Return Value:
+    
+        None
