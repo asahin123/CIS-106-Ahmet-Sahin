@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahmet Halid Sahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-19 05:42:49 PM"/>
+        <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMTk7MDQ6Mzc6MTYgUE07Mzg4Mw=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMDktMTk7MDU6NDI6NDkgUE07MjszOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program shows how to calculate the expected distance in miles to kilometers, meters, and centimeters."/>
+            <declare name="Miles" type="Integer" array="False" size=""/>
+            <declare name="Kilometers" type="Integer" array="False" size=""/>
+            <declare name="Meters" type="Integer" array="False" size=""/>
+            <declare name="Centimeters" type="Integer" array="False" size=""/>
+            <assign variable="Miles" expression="GetMiles()"/>
+            <assign variable="Kilometers" expression="CalculateKilometers(Miles)"/>
+            <assign variable="Meters" expression="CalculateMeters(Miles)"/>
+            <assign variable="Centimeters" expression="CalculateCentimeters(Miles)"/>
+            <call expression="DisplayResult(Miles,Kilometers,Meters,Centimeters)"/>
+            <comment text="References: https://www.youtube.com/watch?v=FWaN3lTyhPU"/>
+        </body>
+    </function>
+    <function name="CalculateCentimeters" type="Real" variable="Centimeters">
+        <parameters>
+            <parameter name="Miles" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Centimeters" type="Real" array="False" size=""/>
+            <assign variable="Centimeters" expression="miles*160934.4"/>
+        </body>
+    </function>
+    <function name="CalculateKilometers" type="Integer" variable="Kilometers">
+        <parameters>
+            <parameter name="Miles" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Kilometers" type="Integer" array="False" size=""/>
+            <assign variable="Kilometers" expression="miles*1.609344"/>
+        </body>
+    </function>
+    <function name="CalculateMeters" type="Integer" variable="Meters">
+        <parameters>
+            <parameter name="Miles" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Meters" type="Integer" array="False" size=""/>
+            <assign variable="Meters" expression="miles*1609.344"/>
+        </body>
+    </function>
+    <function name="DisplayResult" type="None" variable="">
+        <parameters>
+            <parameter name="Miles" type="Integer" array="False"/>
+            <parameter name="Kilometers" type="Integer" array="False"/>
+            <parameter name="Meters" type="Integer" array="False"/>
+            <parameter name="Centimeters" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="Miles &amp; &quot;Miles is &quot; &amp; Kilometers &amp; &quot; Kilometers &quot; &amp; Meters &amp; &quot; Meters &quot; &amp; Centimeters &amp; &quot;  Centimeters &quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="GetMiles" type="Integer" variable="Miles">
+        <parameters/>
+        <body>
+            <declare name="Miles" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Miles&quot;" newline="True"/>
+            <input variable="Miles"/>
+        </body>
+    </function>
+</flowgorithm>
