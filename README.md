@@ -15,3 +15,5 @@ This assignment taught about how to use variables and to put them in the correct
 ## Assignment 4
 
 I learned how to check my codes on the Visual Studio Code program for today's session. I also double-checked my principles by doing a flowchart for practice. Also, I realized that checking codes on Visual Studio Code is faster and easier to notice the changes. Every wrong code was showing in different colors, which was easier to detect the problem. The session felt like an extension of session three but in a better way, with more practice and understanding of the tools. On the other hand, I did the third activity for this session, which was familiar with my previous training. I practiced programming codes for arithmetic calculations and coding flowcharts.
+
+## Assignment 5
