@@ -19,3 +19,5 @@ I learned how to check my codes on the Visual Studio Code program for today's se
 ## Assignment 5
 
 In this session, I tried to create different functions in my flowchart to add to my previous homework and got the same results. I learned a new syntax, and it's called "call." With this syntax, I combined different flowcharts and brought together other grandfathers. I used Visual Studio Code to check that the codes were working and didn't get any wrong results. I also learned different types of scopes to understand my future designs better. Moreover, for this session, I gladly managed to write down my codes without no issues. I think I am getting better and more familiar with flowcharts.
+
+## Assignment 6
