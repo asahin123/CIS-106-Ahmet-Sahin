@@ -1,21 +1,17 @@
 def calculate_Days(age):
     days = age * 365
-    
     return days
 
 def calculate_Hours(age):
-    hours = age * 8760
-    
+    hours = age * 8760    
     return hours
 
 def calculate_Months(age):
-    months = age * 12
-    
+    months = age * 12    
     return months
 
 def calculate_Seconds(age):
-    seconds = age * 31536000
-    
+    seconds = age * 31536000    
     return seconds
 
 def display_Result(months, days, hours, seconds):
@@ -23,8 +19,7 @@ def display_Result(months, days, hours, seconds):
 
 def get_Age():
     print("Enter Age")
-    age = int(input())
-    
+    age = int(input())    
     return age
 
 # Main
