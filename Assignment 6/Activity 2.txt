@@ -1,13 +1,13 @@
-This program shows an expected age in years, months, days, hours, and seconds.
+This program shows an expected age in months, days, hours, and seconds.
 
 Main Program
 
     Get Age
-    Calculate Years
     Calculate Months
     Calculate Days
     Calculate Hours
     Calculate Seconds
+    Display Result
     
 Get Age
 
@@ -23,20 +23,6 @@ Get Age
     Return Value:
     
         Age in years, months, days, hours, and seconds.
-        
-Calculate Years
-
-    Parameters:
-    
-        Age
-        
-    Process:
-    
-        Convert Age in Years
-        
-    Return Value:
-    
-        Age in Years
         
 Calculate Months
 
@@ -98,7 +84,6 @@ Display Result
 
     Parameters:
     
-        Age in Years
         Age in Months
         Age in Days
         Age in Hours
@@ -106,7 +91,7 @@ Display Result
         
     Process:
     
-        Display Age in years, months, days, hours, and seconds.
+        Display Age in months, days, hours, and seconds.
         
     Return Value:
     
