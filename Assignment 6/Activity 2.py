@@ -25,8 +25,8 @@ def calculate_seconds(age):
 
 
 def display_result(months, days, hours, seconds):
-    print(str(months) + " Months " + str(days) + " Days " + str(hours) 
-          + " Hours " + str(seconds) + " Seconds ")
+    print(str(months) + " Months " + str(days) + " Days " + 
+          str(hours) + " Hours " + str(seconds) + " Seconds ")
     
 
 def get_age():
