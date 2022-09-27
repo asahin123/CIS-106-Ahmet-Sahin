@@ -24,11 +24,11 @@ def get_age():
 
 # Main
 # This program shows an expected age in months, days, hours, and seconds.
-age = get_Age()
-months = calculate_Months(age)
-days = calculate_Days(age)
-hours = calculate_Hours(age)
-seconds = calculate_Seconds(age)
-display_Result(months, days, hours, seconds)
+age = get_age()
+months = calculate_months(age)
+days = calculate_days(age)
+hours = calculate_hours(age)
+seconds = calculate_seconds(age)
+display_result(months, days, hours, seconds)
 
 # References: https://www.youtube.com/watch?v=FWaN3lTyhPU
