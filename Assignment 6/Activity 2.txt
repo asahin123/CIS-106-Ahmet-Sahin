@@ -18,12 +18,13 @@ Get Age
     Process:
     
         Display Prompt
-        Get Age in years, months, days, hours, and seconds.
+        Get Age in years
         
     Return Value:
     
-        Age in years, months, days, hours, and seconds.
-        
+        Age in years
+
+
 Calculate Months
 
     Parameters:
@@ -38,6 +39,7 @@ Calculate Months
     
         Age in Months
         
+
 Calculate Days
 
     Parameters:
@@ -52,6 +54,7 @@ Calculate Days
     
         Age in Days        
         
+
 Calculate Hours
 
     Parameters:
@@ -66,6 +69,7 @@ Calculate Hours
     
         Age in Hours
         
+
 Calculate Seconds
 
     Parameters:
@@ -80,6 +84,7 @@ Calculate Seconds
     
         Age in Seconds
         
+
 Display Result
 
     Parameters:
@@ -96,5 +101,3 @@ Display Result
     Return Value:
     
         None
-        
-        
