@@ -1,3 +1,9 @@
+# Main
+# This program shows an expected age in months, days, hours, and seconds.
+
+# References: https://www.youtube.com/watch?v=FWaN3lTyhPU
+
+
 def calculate_Days(age):
     days = age * 365
     return days
@@ -28,13 +34,12 @@ def get_Age():
     return age
 
 
-# Main
-# This program shows an expected age in months, days, hours, and seconds.
-age = get_Age()
-months = calculate_Months(age)
-days = calculate_Days(age)
-hours = calculate_Hours(age)
-seconds = calculate_Seconds(age)
-display_Result(months, days, hours, seconds)
+def main():
+    age = get_Age()
+    months = calculate_Months(age)
+    days = calculate_Days(age)
+    hours = calculate_Hours(age)
+    seconds = calculate_Seconds(age)
+    display_Result(months, days, hours, seconds)
 
-# References: https://www.youtube.com/watch?v=FWaN3lTyhPU
+main()
