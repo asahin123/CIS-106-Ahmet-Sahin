@@ -15,7 +15,8 @@ def calculate_Seconds(age):
     return seconds
 
 def display_Result(months, days, hours, seconds):
-    print(str(months) + " Months " + str(days) + " Days " + str(hours) + " Hours " + str(seconds) + " Seconds ")
+    print(str(months) + " Months " + str(days) + " Days " + str(hours) +\
+    " Hours " + str(seconds) + " Seconds ")
 
 def get_Age():
     print("Enter Age")
