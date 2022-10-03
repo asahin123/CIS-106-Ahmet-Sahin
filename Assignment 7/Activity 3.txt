@@ -1,4 +1,4 @@
-This program asks the user to select US or Metric conversion and input a given distance. Then the program converts the given temperature and displays the result.
+This program asks the user to select US or Metric conversion and input a given distance. Then the program converts the given distance to miles and displays the result.
 
 Main Program
 
@@ -15,7 +15,7 @@ Main Program
     
         Get Metric Distance
         Calculate US distance
-        
+        Display result        
     
     Get Choice
     
