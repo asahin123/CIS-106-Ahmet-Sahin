@@ -22,7 +22,7 @@ def processUsDistance(miles):
     inches = miles * 63360
     print(str(miles) + " mile(s) is equivalent to " + str(yards) + " yards, " + str(feet) + " ft, " + str(inches) + " inches")
 
-# Main
+def main():
 miles = getInputMiles()
 choice = getChoiceChar()
 if choice == "U" or choice == "u":
