@@ -1,0 +1,97 @@
+This program asks the user to select US or Metric conversion and input a given distance. Then the program converts the given temperature and displays the result.
+
+Main Program
+
+
+    Get Choice
+    
+    Either:
+        
+        Get US distance
+        Calculate Metric distance
+        Display result
+        
+    Or:
+    
+        Get Metric Distance
+        Calculate US distance
+        
+    
+    Get Choice
+    
+        Parameters:
+        
+            None
+            
+        Process:
+        
+            Display Prompt
+            Get choice of US or Metric conversion
+            
+        Return Value:
+        
+            Choice
+            
+    Get Distance:
+    
+        Parameters:
+        
+            Label(US or Metric)
+            
+        Process:
+        
+            Display prompt with label
+            Get distance
+            
+        Return Value:
+        
+            Distance
+            
+    Calculate Metric distance
+    
+        Parameters:
+        
+            Distance in miles
+            
+        Process:
+        
+            Convert miles to Metric distance
+            
+        Return Value:
+        
+            miles in Metric distance
+            
+    Calculate US distance
+    
+        Parameters:
+        
+            Distance in miles
+            
+        Process:
+        
+            Convert miles to US distance
+            
+        Return Value:
+        
+            miles in US distance
+            
+    Display Result
+    
+        Parameters:
+        
+            Input distance
+            From label (US distance or Metric distance)
+            Output distance in miles
+            to label (US distance or Metric distance)
+            
+        Process:
+        
+            Display distance in miles and labels
+            
+        Return Value:
+        
+            None
+            
+            
+        
+    
