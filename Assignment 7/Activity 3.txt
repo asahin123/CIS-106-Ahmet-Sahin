@@ -2,35 +2,6 @@ This program asks the user to select US or Metric conversion and input a given d
 
 Main Program
 
-
-    Get Choice
-    
-    Either:
-        
-        Get US distance
-        Calculate Metric distance
-        Display result
-        
-    Or:
-    
-        Get Metric Distance
-        Calculate US distance
-        Display result        
-    
-    Get Choice
-    
-        Parameters:
-        
-            None
-            
-        Process:
-        
-            Display Prompt
-            Get choice of US or Metric conversion
-            
-        Return Value:
-        
-            Choice
             
     Get Distance:
     
@@ -91,6 +62,36 @@ Main Program
         Return Value:
         
             None
+            
+    
+    Get Choice
+    
+    Either:
+        
+        Get US distance
+        Calculate Metric distance
+        Display result
+        
+    Or:
+    
+        Get Metric Distance
+        Calculate US distance
+        Display result        
+    
+    Get Choice
+    
+        Parameters:
+        
+            None
+            
+        Process:
+        
+            Display Prompt
+            Get choice of US or Metric conversion
+            
+        Return Value:
+        
+            Choice        
             
             
         
