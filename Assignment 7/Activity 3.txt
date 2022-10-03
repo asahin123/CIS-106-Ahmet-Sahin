@@ -3,96 +3,84 @@ This program asks the user to select US or Metric conversion and input a given d
 Main Program
 
             
-    Get Distance:
+    get Miles:
     
-        Parameters:
-        
-            Label(US or Metric)
-            
-        Process:
-        
-            Display prompt with label
-            Get distance
-            
-        Return Value:
-        
-            Distance
-            
-    Calculate Metric distance
+        Get the value of mile(s) as input
     
-        Parameters:
-        
-            Distance in miles
-            
-        Process:
-        
-            Convert miles to Metric distance
-            
-        Return Value:
-        
-            miles in Metric distance
-            
-    Calculate US distance
     
-        Parameters:
-        
-            Distance in miles
-            
-        Process:
-        
-            Convert miles to US distance
-            
-        Return Value:
-        
-            miles in US distance
-            
-    Display Result
-    
-        Parameters:
-        
-            Input distance
-            From label (US distance or Metric distance)
-            Output distance in miles
-            to label (US distance or Metric distance)
-            
-        Process:
-        
-            Display distance in miles and labels
-            
-        Return Value:
-        
-            None
-            
-    
-    Get Choice
+    get Choice:
     
     Either:
-        
-        Get US distance
-        Calculate Metric distance
-        Display result
-        
+                    
+    	Get U
+	Calculate miles in terms of yards, feet, and inches
+	Display result
     Or:
     
-        Get Metric Distance
-        Calculate US distance
-        Display result        
-    
-    Get Choice
-    
+    	Get M
+	Calculate miles in terms of kilometers, meters, and centimeters
+	Display result
+	
+get Choice
+
         Parameters:
         
-            None
-            
+                None
+        
         Process:
         
-            Display Prompt
-            Get choice of US or Metric conversion
-            
+                Display prompt
+                Get choice of Us or Metric distance conversion character
+                
         Return Value:
         
-            Choice        
-            
-            
+                Choice
+          
+get Miles
+
+        Parameters:
         
-    
+                None
+        
+        Process:
+        
+                Display prompt
+                Input value of distance in terms of mile(s)
+                
+        Return Value:
+        
+                miles
+                
+Calculate Metric Distance
+
+        Parameters:
+        
+                Miles
+                
+        Process:
+        
+                Convert miles to kilometers, meters, and centimeters
+                Display result: kilometers, meters and centimeters
+                
+        Return value:
+        
+                None
+                
+Calculate US Distance
+
+        Parameters:
+        
+                Miles
+                
+        Process:
+        
+                Convert miles to yards, feet, and inches
+                Display result: yards, feet, and inches
+                
+        Return value:
+        
+                None
+                
+                
+                
+             
