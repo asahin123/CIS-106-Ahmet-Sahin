@@ -1,140 +1,95 @@
-This program asks the user to select US or Metric conversion and input a given distance. Then the program converts the given distance to miles and displays the result.
+This program asks the user to select US or Metric conversion and input a given distance. 
+Then the program converts the given distance to miles and displays the result.
 
 Main Program
-
-            
-    get Miles:
-    
-        Get the value of mile(s) as input
-    
-    
-    get Choice:
-    
+    Get Miles
+    Get Choice
     Either:
-                    
-    	Get U for US distance
-	Calculate miles in terms of yards, feet, and inches
-	Display result
+        Calculate yards
+        Calculate feet
+        Calculate inches
+        Display US
     Or:
-    
-    	Get M for Metric distance
-	Calculate miles in terms of kilometers, meters, and centimeters
-	Display result
-	
-get Choice
+        Calculate kilometers
+        Calculate meters
+        Calculate centimeters
+        Display metric
 
-        Parameters:
-        
-                None
-        
-        Process:
-        
-                Display prompt
-                Get choice of Us or Metric distance conversion character
-                
-        Return Value:
-        
-                Choice
-                
+Get Choice
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get choice of US or Metric distance conversion value (US, metric)
+    Return Value:
+        Choice
+
 Calculate Kilometers
+    Parameters:
+        Miles
+    Process:
+        Convert miles to kilometers
+    Return value:
+        kilometers
 
-        Parameters:
-        
-                Miles
-                
-        Process:
-        
-                Convert miles to kilometers
-                
-        Return value:
-        
-                kilometers
-                
 Calculate Meters
-
-        Parameters:
-        
-                Miles
-                
-        Process:
-        
-                Convert miles to meters
-                
-        Return value:
-        
-                meters
+    Parameters:
+        Miles
+    Process:
+        Convert miles to meters
+    Return value:
+        meters
 
 Calculate Centimeters
-
-        Parameters:
+    Parameters:
+        Miles
+    Process:
+        Convert miles to centimeters
+    Return value:
+        centimeters
         
-                Miles
-                
-        Process:
-        
-                Convert miles to centimeters
-                
-        Return value:
-        
-                centimeters
-		
 Calculate Yards
-
-        Parameters:
+    Parameters:
+        Miles
+    Process:
+        Convert miles to yards
+    Return value:
+        yards
         
-                Miles
-                
-        Process:
-        
-                Convert miles to yards
-                
-        Return value:
-        
-                yards
-		
 Calculate Feet
-
-        Parameters:
+    Parameters:
+        Miles
+    Process:
+        Convert miles to feet
+    Return value:
+        feet
         
-                Miles
-                
-        Process:
-        
-                Convert miles to feet
-                
-        Return value:
-        
-                feet
-		
 Calculate Inches
+    Parameters:
+        Miles
+    Process:
+        Convert miles to inches
+    Return value:
+        inches
 
-        Parameters:
-        
-                Miles
-                
-        Process:
-        
-                Convert miles to inches
-                
-        Return value:
-        
-                inches
-                
+Display US
+    Parameters:
+        miles
+        yards
+        feet
+        inches
+    Process:    
+        Display miles, yards, feet, inches
+    Return Value:
+        None
+
 Display Result
-
-	Parameters:
-		
-		Input miles, kMyD, mTfT, cMiN
-		From label (km, m, cm, yards, ft, inches)
-		Output miles, kMyD, mTfT, cMiN
-		To label (km, m, cm, yards, ft, inches)
-		
-	Process:
-	
-		Display miles, kilometers, meters, centimeter, yards, feet, inches, and labels
-		
-	Return Value:
-	
-		None
-                
-             
+    Parameters:
+        miles
+        kilometers
+        meters
+        centimeters
+    Process:    
+        Display miles, kilometers, meters, centimeters        
+    Return Value:
+        None
