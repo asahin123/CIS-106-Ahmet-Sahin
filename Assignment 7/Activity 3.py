@@ -59,7 +59,7 @@ def processUsDistance(miles):
     inches = calculateInches(miles)
     displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
 
-def Main()
+def main()
 
 miles = getInputMiles()
 choice = getChoiceChar()
