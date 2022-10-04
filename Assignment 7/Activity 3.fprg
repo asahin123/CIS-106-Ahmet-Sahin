@@ -4,10 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ahmet Halid Sahin"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-04 06:42:11 AM"/>
+        <attribute name="saved" value="2022-10-04 06:59:06 AM"/>
         <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDI7MDc6NDM6MjggUE07Mzg3MA=="/>
         <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDI7MDg6MjU6MzcgUE07MTtBaG1ldCBIYWxpZCBTYWhpbjtERVNLVE9QLU42M0k4UE47MjAyMi0wOS0xOTswNDozNzoxNiBQTTtkaXN0YW5jZSBjb252ZXJ0ZXIgd2l0aCBmdW5jdGlvbnMuZnByZzsxMTgwOQ=="/>
-        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDQ7MDY6NDI6MTEgQU07NjszOTYw"/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDQ7MDY6NTk6MDYgQU07ODszOTc0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -144,7 +144,7 @@
             <assign variable="yards" expression="calculateYards(miles)"/>
             <assign variable="feet" expression="calculateFeet(miles)"/>
             <assign variable="inches" expression="calculateInches(miles)"/>
-            <output expression="miles &amp; &quot; mile(s) is equivalent to &quot; &amp; yards &amp; &quot; yards, &quot; &amp; feet &amp; &quot; ft, &quot; &amp; inches &amp; &quot; inches&quot;" newline="True"/>
+            <call expression="displayResult(miles, yards, &quot; yards, &quot;, feet, &quot; ft, &quot;, inches, &quot; inches.&quot;) "/>
         </body>
     </function>
 </flowgorithm>
