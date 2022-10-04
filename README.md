@@ -23,3 +23,5 @@ In this session, I tried to create different functions in my flowchart to add to
 ## Assignment 6
 
 For this week's session, I have learned how to type codes in Python. I have used Visual Studio Code to understand the problems of my errors. Furthermore, I made an appointment with my instructor to solve my problems to solve snake_case and main function issues. Also, to make the codes a hundred percent correct used algorithm and checked compared with the Python codes. Moreover, I just learned about the difference between snake_case and Camelcase. In the end, I think I mastered Python a little bit. My next goal is about to learn other regulations, so next session, I will start to use Javascript to add to my knowledge. 
+
+## Assignment 7
