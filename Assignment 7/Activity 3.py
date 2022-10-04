@@ -59,7 +59,7 @@ def processUsDistance(miles):
     inches = calculateInches(miles)
     displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
 
-def main()
+main()
 
 miles = getInputMiles()
 choice = getChoiceChar()
@@ -71,4 +71,4 @@ else:
     else:
         print("You must enter U to convert distance into US distance or M to convert into Metric distance!")
 
-main()
+
