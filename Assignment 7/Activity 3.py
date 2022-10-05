@@ -61,8 +61,8 @@ def processUsDistance(miles):
 
 # Main
 
-miles = getInputMiles()
 choice = getChoiceChar()
+miles = getInputMiles()
 if choice == "U" or choice == "u":
     processUsDistance(miles)
 else:
@@ -70,5 +70,4 @@ else:
         processMetricDistance(miles)
     else:
         print("You must enter U to convert distance into US distance or M to convert into Metric distance!")
-
 
