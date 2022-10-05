@@ -43,7 +43,7 @@ def getChoiceChar():
 
 def getInputMiles():
     print("Enter distance in terms of miles")
-    miles = float(input())
+    miles = getinputmiles()
     
     return miles
 
