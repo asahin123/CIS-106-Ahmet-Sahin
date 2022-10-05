@@ -9,7 +9,7 @@ def getInputMiles():
     return miles
 
 def getChoiceChar():
-    print("Enter U to convert to US distance or M to convert to Metric distance.")
+    print("Enter US to convert to US distance or Metric to convert to Metric distance.")
     choice = input()
     
     return choice
@@ -70,6 +70,6 @@ else:
     if choice == "M" or choice == "m":
         processMetricDistance(miles)
     else:
-        print("You must enter U to convert distance into US distance or M to convert into Metric distance!")
+        print("You must enter US to convert distance into US distance or Metric to convert into Metric distance!")
 
 
