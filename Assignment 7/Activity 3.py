@@ -2,6 +2,22 @@
 
 # References: https://www.youtube.com/watch?v=VcZG_PxP7wQ&t=34s
 
+def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORfeet,
+                  cmORinches, scaleCmORinches):
+    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
+          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)
+
+def getInputMiles():
+    print("Enter distance in terms of miles")
+    miles = input()
+    
+    return miles
+
+def getChoiceChar():
+    print("Enter U to convert to US distance or M to convert to Metric distance.")
+    choice = input()
+    
+    return choice
 def calculateCentimeters(miles):
     centimeters = miles * 160934.4
     
@@ -31,23 +47,6 @@ def calculateYards(miles):
     yards = miles * 1760
     
     return yards
-
-def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORfeet,
-                  cmORinches, scaleCmORinches):
-    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
-          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)
-
-def getInputMiles():
-    print("Enter distance in terms of miles")
-    miles = input()
-    
-    return miles
-
-def getChoiceChar():
-    print("Enter U to convert to US distance or M to convert to Metric distance.")
-    choice = input()
-    
-    return choice
 
 def processMetricDistance(miles):
     kilometers = calculateKilometers(miles)
