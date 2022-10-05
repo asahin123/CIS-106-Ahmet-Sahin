@@ -1,4 +1,4 @@
-# This program asks the user to select US or Metric conversion and input a given distance. Then the program converts the given distance to miles and displays the result.
+# Create a program that asks the user for a distance in miles, and then ask the user if they want the distance in US measurements (yards, feet, and inches) or in metric measurements (kilometers, meters, and centimeters). Use if/else conditional statements to determine their selection and then calculate and display the results.
 
 # References: https://www.youtube.com/watch?v=VcZG_PxP7wQ&t=34s
 
@@ -32,26 +32,28 @@ def calculateYards(miles):
     
     return yards
 
-def displayResult(miles, kMyD, strKm, mTfT, strM, cMiN, strCm):
-    print(str(miles) + " mile(s) is equivalent to " + str(kMyD) + strKm + str(mTfT) + strM + str(cMiN) + strCm)
-
-def getChoiceChar():
-    print("Enter US to convert to US distance or Metric to convert to Metric distance.")
-    choice = input()
-    
-    return choice
+def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORfeet,
+                  cmORinches, scaleCmORinches):
+    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
+          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)
 
 def getInputMiles():
     print("Enter distance in terms of miles")
-    miles = input()
+    miles = float(input())
     
     return miles
+
+def getChoiceChar():
+    print("Enter U to convert to US distance or M to convert to Metric distance.")
+    choice = input()
+    
+    return choice
 
 def processMetricDistance(miles):
     kilometers = calculateKilometers(miles)
     meters = calculateMeters(miles)
     centimeters = calculateCentimeters(miles)
-    displayResult(miles, kilometers, " kilometers, ", meters, " meters, ", centimeters, " centimeters.")
+    displayResult(miles, kilometers, " km, ", meters, " m, ", centimeters, " cm.")
 
 def processUsDistance(miles):
     yards = calculateYards(miles)
@@ -60,15 +62,15 @@ def processUsDistance(miles):
     displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
 
 # Main
-
+# Create a program that asks the user for a distance in miles, and then ask the user if they want the distance in US measurements (yards, feet, and inches) or in metric measurements (kilometers, meters, and centimeters). Use if/else conditional statements to determine their selection and then calculate and display the results.
 choice = getChoiceChar()
 miles = getInputMiles()
-if choice == "US" or choice == "us":
+if choice == "U" or choice == "u":
     processUsDistance(miles)
 else:
-    if choice == "Metric" or choice == "metric":
+    if choice == "M" or choice == "m":
         processMetricDistance(miles)
     else:
-        print("You must enter US to convert distance into US distance or Metric to convert into Metric distance!")
+        print("You must enter U to convert distance into US distance or M to convert into Metric distance!")
 
 
