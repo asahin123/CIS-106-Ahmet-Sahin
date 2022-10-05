@@ -62,8 +62,8 @@ def processUsDistance(miles):
     displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
 
 # Main
-miles = getInputMiles()
 choice = getChoiceChar()
+miles = getInputMiles()
 if choice == "U" or choice == "u":
     processUsDistance(miles)
 else:
