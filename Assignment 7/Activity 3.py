@@ -65,6 +65,7 @@ def displayResult(miles):
 #          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)   
     
 # Main
+main()
 miles = getInputMiles()
 choice = getChoiceChar()
 if choice == "U" or choice == "u":
