@@ -2,17 +2,17 @@
 
 # References: https://www.youtube.com/watch?v=VcZG_PxP7wQ&t=34s
 
-def getChoiceChar():
-    print("Enter U to convert to US distance or M to convert to Metric distance.")
-    choice = input()
-    
-    return choice
-  
 def getInputMiles():
     print("Enter the expecting miles")
     miles = input()
     
     return miles
+
+def getChoiceChar():
+    print("Enter U to convert to US distance or M to convert to Metric distance.")
+    choice = input()
+    
+    return choice
   
 def calculateCentimeters(miles):
     centimeters = miles * 160934.4
@@ -62,8 +62,8 @@ def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORf
           + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)
     
 # Main
-choice = getChoiceChar()
 miles = getInputMiles()
+choice = getChoiceChar()
 if choice == "U" or choice == "u":
     processUsDistance(miles)
 else:
