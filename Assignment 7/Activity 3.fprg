@@ -4,20 +4,19 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ahmet Halid Sahin"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-04 10:54:31 PM"/>
+        <attribute name="saved" value="2022-10-05 02:03:47 PM"/>
         <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDI7MDc6NDM6MjggUE07Mzg3MA=="/>
         <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDI7MDg6MjU6MzcgUE07MTtBaG1ldCBIYWxpZCBTYWhpbjtERVNLVE9QLU42M0k4UE47MjAyMi0wOS0xOTswNDozNzoxNiBQTTtkaXN0YW5jZSBjb252ZXJ0ZXIgd2l0aCBmdW5jdGlvbnMuZnByZzsxMTgwOQ=="/>
-        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDQ7MDY6NTk6MDYgQU07ODszOTc0"/>
-        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTDFFMkhGSTsyMDIyLTEwLTA0OzEwOjU0OjMxIFBNOzI7MzA0Nw=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDU7MDI6MDM6NDcgUE07MTE7NDAyMg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="Create a program that asks the user for a distance in miles, and then ask the user if they want the distance in US measurements (yards, feet, and inches) or in metric measurements (kilometers, meters, and centimeters). Use if/else conditional statements to determine their selection and then calculate and display the results."/>
+            <comment text="This program asks the user to select US or Metric conversion and input a given distance. Then the program converts the given distance to miles and displays the result."/>
             <declare name="miles" type="Real" array="False" size=""/>
             <declare name="choice" type="String" array="False" size=""/>
-            <assign variable="miles" expression="getInputMiles()"/>
             <assign variable="choice" expression="getChoiceChar()"/>
+            <assign variable="miles" expression="getInputMiles()"/>
             <if expression="choice = &quot;U&quot; or choice = &quot;u&quot;">
                 <then>
                     <call expression="ProcessUSdistance(miles)"/>
@@ -93,15 +92,15 @@
     <function name="displayResult" type="None" variable="">
         <parameters>
             <parameter name="miles" type="Real" array="False"/>
-            <parameter name="kmeterORyard" type="Real" array="False"/>
-            <parameter name="scaleKmORyard" type="String" array="False"/>
-            <parameter name="meterORfeet" type="Real" array="False"/>
-            <parameter name="scaleMeterORfeet" type="String" array="False"/>
-            <parameter name="cmORinches" type="Real" array="False"/>
-            <parameter name="scaleCmORinches" type="String" array="False"/>
+            <parameter name="kMyD" type="Real" array="False"/>
+            <parameter name="strKm" type="String" array="False"/>
+            <parameter name="mTfT" type="Real" array="False"/>
+            <parameter name="strM" type="String" array="False"/>
+            <parameter name="cMiN" type="Real" array="False"/>
+            <parameter name="strCm" type="String" array="False"/>
         </parameters>
         <body>
-            <output expression="miles &amp; &quot; mile(s) is equivalent to &quot; &amp; kmeterORyard &amp; scaleKmORyard &amp; meterORFeet &amp; scaleMeterORfeet &amp; cmORinches &amp; scaleCmORinches" newline="True"/>
+            <output expression="miles &amp; &quot; mile(s) is equivalent to &quot; &amp; kMyD &amp; strKm &amp; mTfT &amp; strM &amp; cMiN &amp; strCm" newline="True"/>
         </body>
     </function>
     <function name="getChoiceChar" type="String" variable="choice">
@@ -131,7 +130,7 @@
             <assign variable="kilometers" expression="calculateKilometers(miles)"/>
             <assign variable="meters" expression="calculateMeters(miles)"/>
             <assign variable="centimeters" expression="calculateCentimeters(miles)"/>
-            <call expression="displayResult(miles, kilometers, &quot; km, &quot;, meters, &quot; m, &quot;, centimeters, &quot; cm.&quot;)"/>
+            <call expression="displayResult(miles, kilometers, &quot; kilometers, &quot;, meters, &quot; meters, &quot;, centimeters, &quot; centimeters.&quot;)"/>
         </body>
     </function>
     <function name="ProcessUsDistance" type="None" variable="">
