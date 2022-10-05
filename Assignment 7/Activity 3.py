@@ -7,17 +7,18 @@ def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORf
     print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
           + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)
 
-def getInputMiles():
-    print("Enter distance in terms of miles")
-    miles = input()
-    
-    return miles
-
 def getChoiceChar():
     print("Enter U to convert to US distance or M to convert to Metric distance.")
     choice = input()
     
     return choice
+  
+def getInputMiles():
+    print("Enter the expecting miles")
+    miles = input()
+    
+    return miles
+  
 def calculateCentimeters(miles):
     centimeters = miles * 160934.4
     
