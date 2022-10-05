@@ -56,10 +56,13 @@ def processUsDistance(miles):
     inches = calculateInches(miles)
     displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
 
-def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORfeet,
-                  cmORinches, scaleCmORinches):
-    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
-          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)
+def displayResult(miles):
+    print(str(miles) + " mile(s) is equivalent to ")
+    
+#def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORfeet,
+#                  cmORinches, scaleCmORinches):
+#    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
+#          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)   
     
 # Main
 miles = getInputMiles()
