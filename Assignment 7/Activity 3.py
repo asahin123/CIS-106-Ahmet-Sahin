@@ -64,8 +64,7 @@ def displayResult(miles):
 #    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
 #          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)   
     
-# Main
-main()
+Main
 miles = getInputMiles()
 choice = getChoiceChar()
 if choice == "U" or choice == "u":
@@ -76,4 +75,5 @@ else:
     else:
         print("You must enter US to convert distance into US distance or Metric to convert into Metric distance!")
 
+main()
 
