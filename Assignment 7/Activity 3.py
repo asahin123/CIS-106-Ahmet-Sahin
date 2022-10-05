@@ -57,7 +57,7 @@ def processUsDistance(miles):
     yards = calculateYards(miles)
     feet = calculateFeet(miles)
     inches = calculateInches(miles)
-    displayResult(miles, yards, " yards, ", feet, " feett, ", inches, " inches.")
+    displayResult(miles, yards, " yards, ", feet, " feet, ", inches, " inch.")
 
 # Main
 
