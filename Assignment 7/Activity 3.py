@@ -51,13 +51,13 @@ def processMetricDistance(miles):
     kilometers = calculateKilometers(miles)
     meters = calculateMeters(miles)
     centimeters = calculateCentimeters(miles)
-    displayResult(miles, kilometers, " km, ", meters, " m, ", centimeters, " cm.")
+    displayResult(miles, kilometers, " kilometers, ", meters, " meters, ", centimeters, " centimeters.")
 
 def processUsDistance(miles):
     yards = calculateYards(miles)
     feet = calculateFeet(miles)
     inches = calculateInches(miles)
-    displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
+    displayResult(miles, yards, " yards, ", feet, " feett, ", inches, " inches.")
 
 # Main
 
