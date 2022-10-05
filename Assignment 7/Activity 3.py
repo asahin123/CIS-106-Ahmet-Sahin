@@ -64,7 +64,7 @@ def displayResult(miles):
 #    print(str(miles) + " mile(s) is equivalent to " + str(kmeterORyard) 
 #          + scaleKmORyard + str(meterORfeet) + scaleMeterORfeet + str(cmORinches) + scaleCmORinches)   
     
-Main
+#Main
 miles = getInputMiles()
 choice = getChoiceChar()
 if choice == "U" or choice == "u":
