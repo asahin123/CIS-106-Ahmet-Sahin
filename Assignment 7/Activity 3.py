@@ -36,7 +36,7 @@ def displayResult(miles, kMyD, strKm, mTfT, strM, cMiN, strCm):
     print(str(miles) + " mile(s) is equivalent to " + str(kMyD) + strKm + str(mTfT) + strM + str(cMiN) + strCm)
 
 def getChoiceChar():
-    print("Enter U to convert to US distance or M to convert to Metric distance.")
+    print("Enter US to convert to US distance or Metric to convert to Metric distance.")
     choice = input()
     
     return choice
@@ -63,11 +63,12 @@ def processUsDistance(miles):
 
 choice = getChoiceChar()
 miles = getInputMiles()
-if choice == "U" or choice == "u":
+if choice == "US" or choice == "us":
     processUsDistance(miles)
 else:
-    if choice == "M" or choice == "m":
+    if choice == "Metric" or choice == "metric":
         processMetricDistance(miles)
     else:
-        print("You must enter U to convert distance into US distance or M to convert into Metric distance!")
+        print("You must enter US to convert distance into US distance or Metric to convert into Metric distance!")
+
 
