@@ -39,7 +39,7 @@ def displayResult(miles, kmeterORyard, scaleKmORyard, meterORfeet, scaleMeterORf
 
 def getInputMiles():
     print("Enter distance in terms of miles")
-    miles = float(input())
+    miles = input()
     
     return miles
 
