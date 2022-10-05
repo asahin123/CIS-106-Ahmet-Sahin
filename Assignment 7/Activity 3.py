@@ -51,22 +51,21 @@ def processMetricDistance(miles):
     kilometers = calculateKilometers(miles)
     meters = calculateMeters(miles)
     centimeters = calculateCentimeters(miles)
-    displayResult(miles, kilometers, " kilometers, ", meters, " meters, ", centimeters, " centimeters.")
+    displayResult(miles, kilometers, " km, ", meters, " m, ", centimeters, " cm.")
 
 def processUsDistance(miles):
     yards = calculateYards(miles)
     feet = calculateFeet(miles)
     inches = calculateInches(miles)
-    displayResult(miles, yards, " yards, ", feet, " feet, ", inches, " inches.")
+    displayResult(miles, yards, " yards, ", feet, " ft, ", inches, " inches.")
 
 # Main
-
 miles = getInputMiles()
 choice = getChoiceChar()
 if choice == "US":
     processUsDistance(miles)
 else:
-    if choice == "Metric":
+    if choice == "Metric" or choice == "metric":
         processMetricDistance(miles)
     else:
         print("You must enter US to convert distance into US distance or Metric to convert into Metric distance!")
