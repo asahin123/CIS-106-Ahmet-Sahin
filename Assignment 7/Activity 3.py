@@ -18,7 +18,7 @@ def calculateInches(miles):
     return inches
 
 def calculateKilometers(miles):
-    kilometers = miles * 1.6
+    kilometers = miles * 1.609344
     
     return kilometers
 
