@@ -4,31 +4,56 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ahmet Halid Sahin"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-10 05:59:55 PM"/>
+        <attribute name="saved" value="2022-10-10 06:17:27 PM"/>
         <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDc7MDE6NDM6NDEgUE07Mzg2NA=="/>
-        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMTA7MDU6NTk6NTUgUE07MTI7NDAzMg=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMTA7MDY6MTc6MjcgUE07MTY7NDAzMA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <comment text="This program demonstrates while loop counting using the Fibonacci sequence based on a given number of iterations entered by the user."/>
-            <output expression="&quot;Enter an iteration number&quot;" newline="True"/>
             <declare name="iterationNumber" type="Integer" array="False" size=""/>
-            <input variable="iterationNumber"/>
+            <assign variable="iterationNumber" expression="getIterationNumber()"/>
             <declare name="fibonacci" type="Integer" array="True" size="iterationNumber+2"/>
             <assign variable="fibonacci[0]" expression="0"/>
             <assign variable="fibonacci[1]" expression="1"/>
+            <call expression="whileLoop(iterationNumber, fibonacci)"/>
+            <call expression="forLoop(iterationNumber, fibonacci)"/>
+            <comment text="References:https://www.youtube.com/watch?v=TeFiW-2kvTY"/>
+        </body>
+    </function>
+    <function name="forLoop" type="None" variable="">
+        <parameters>
+            <parameter name="iterationNumber" type="Integer" array="False"/>
+            <parameter name="fibonacci" type="Integer" array="True"/>
+        </parameters>
+        <body>
             <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="iterationNumber + 1" direction="inc" step="1">
+                <output expression="fibonacci[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="getIterationNumber" type="Integer" variable="iterationNumber">
+        <parameters/>
+        <body>
+            <output expression="&quot;Enter an iteration number&quot;" newline="True"/>
+            <declare name="iterationNumber" type="Integer" array="False" size=""/>
+            <input variable="iterationNumber"/>
+        </body>
+    </function>
+    <function name="whileLoop" type="None" variable="">
+        <parameters>
+            <parameter name="iterationNumber" type="Integer" array="False"/>
+            <parameter name="fibonacci" type="Integer" array="True"/>
+        </parameters>
+        <body>
             <declare name="count" type="Integer" array="False" size=""/>
             <assign variable="count" expression="0"/>
             <while expression="count &lt; iterationNumber">
                 <assign variable="fibonacci[count+2]" expression="fibonacci[count+1] + fibonacci[count]"/>
                 <assign variable="count" expression="count+1"/>
             </while>
-            <for variable="i" start="0" end="iterationNumber + 1" direction="inc" step="1">
-                <output expression="fibonacci[i]" newline="True"/>
-            </for>
-            <comment text="References:https://www.youtube.com/watch?v=TeFiW-2kvTY"/>
         </body>
     </function>
 </flowgorithm>
