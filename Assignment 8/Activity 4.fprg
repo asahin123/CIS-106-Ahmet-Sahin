@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ahmet Halid Sahin"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-10 05:54:03 PM"/>
+        <attribute name="saved" value="2022-10-10 05:59:55 PM"/>
         <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDc7MDE6NDM6NDEgUE07Mzg2NA=="/>
-        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMTA7MDU6NTQ6MDMgUE07NjszOTc1"/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMTA7MDU6NTk6NTUgUE07MTI7NDAzMg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -21,11 +21,8 @@
             <declare name="i" type="Integer" array="False" size=""/>
             <declare name="count" type="Integer" array="False" size=""/>
             <assign variable="count" expression="0"/>
-            <output expression="fibonacci[count]" newline="True"/>
-            <output expression="fibonacci[count+1]" newline="True"/>
             <while expression="count &lt; iterationNumber">
                 <assign variable="fibonacci[count+2]" expression="fibonacci[count+1] + fibonacci[count]"/>
-                <output expression="fibonacci[count+2]" newline="True"/>
                 <assign variable="count" expression="count+1"/>
             </while>
             <for variable="i" start="0" end="iterationNumber + 1" direction="inc" step="1">
