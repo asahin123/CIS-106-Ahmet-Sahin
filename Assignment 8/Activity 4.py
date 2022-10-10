@@ -9,11 +9,10 @@ fibonacci = [0] * (iterationNumber + 2)
 fibonacci[0] = 0
 fibonacci[1] = 1
 count = 0
-print(fibonacci[count])
-print(fibonacci[count + 1])
 while count < iterationNumber:
     fibonacci[count + 2] = fibonacci[count + 1] + fibonacci[count]
-    print(fibonacci[count + 2])
     count = count + 1
 for i in range(0, iterationNumber + 1 + 1, 1):
     print(fibonacci[i])
+
+# References:https://www.youtube.com/watch?v=TeFiW-2kvTY
