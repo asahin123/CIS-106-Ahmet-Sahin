@@ -1,58 +1,33 @@
 This program demonstrates while loop counting using the Fibonacci sequence based on a given number of iterations entered by the user.
 
 Main Program
-
     Get Iteration Number
-    Demonstrate While Loop
-    Demonstrate For Loop
-        
-Get Iteration Number
+    Process Fibonacci Sequence
 
+Get Iteration Number
     Parameters:
-        
         None
-        
     Process:
-    
         Enter Iteration Number
         Get value
-        
     Return value
-    
         Value
-        
-Demonstrate While Loop
 
-    Parameters:
-    
-        Get Iteration Number
-        Array Fibonacci
-        
-    Process:
-        
-        Initialize count
-        Loop while count < stop
-        
-            Display count
-        
-    Return Value:
-    
-        None
-        
 Demonstrate For Loop
-
     Parameters:
-    
-        Get iteration Number
-        Array Fibonacci
-        
+        iteration Number
     Process:
-    
         Initialize count
-        Loop for count from i equals to 0 to iteration number plus one
-        
+        Loop for count from i equals to 0 to iteration number
+            Calculate Fibonacci value
             Display result
-            
     Return Value:
-    
+        None
+
+Display Result
+    Parameters:
+        Result
+    Process:
+        Display Result
+    Return Value:
         None
