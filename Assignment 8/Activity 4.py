@@ -2,9 +2,16 @@
 
 # References:https://www.youtube.com/watch?v=TeFiW-2kvTY
 
-def forLoop(iterationNumber, fibonacci):
-    for i in range(0, iterationNumber + 1 + 1, 1):
-        print(fibonacci[i])
+def forLoop(iterationNumber):
+    fibonacci0 = 0
+    fibonacci1 = 1
+    print(fibonacci0)
+    print(fibonacci1)
+    for i in range(1, iterationNumber + 1, 1):
+        fibonacciNext = fibonacci1 + fibonacci0
+        print(fibonacciNext)
+        fibonacci0 = fibonacci1
+        fibonacci1 = fibonacciNext
 
 def getIterationNumber():
     print("Enter an iteration number")
@@ -12,19 +19,6 @@ def getIterationNumber():
     
     return iterationNumber
 
-def whileLoop(iterationNumber, fibonacci):
-    count = 0
-    while count < iterationNumber:
-        fibonacci[count + 2] = fibonacci[count + 1] + fibonacci[count]
-        count = count + 1
-
 # Main
 iterationNumber = getIterationNumber()
-fibonacci = [0] * (iterationNumber + 2)
-
-fibonacci[0] = 0
-fibonacci[1] = 1
-whileLoop(iterationNumber, fibonacci)
-forLoop(iterationNumber, fibonacci)
-
-
+forLoop(iterationNumber)
