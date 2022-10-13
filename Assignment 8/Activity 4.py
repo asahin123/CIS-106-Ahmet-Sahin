@@ -5,9 +5,10 @@
 def forLoop(iterationNumber):
     fibonacci0 = 0
     fibonacci1 = 1
+    print("Fibonacci Sequence")
     print(fibonacci0)
     print(fibonacci1)
-    for i in range(1, iterationNumber + 1, 1):
+    for i in range(1, iterationNumber - 2 + 1, 1):
         fibonacciNext = fibonacci1 + fibonacci0
         print(fibonacciNext)
         fibonacci0 = fibonacci1
@@ -22,3 +23,5 @@ def getIterationNumber():
 # Main
 iterationNumber = getIterationNumber()
 forLoop(iterationNumber)
+
+
