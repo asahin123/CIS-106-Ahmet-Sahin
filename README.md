@@ -32,3 +32,5 @@ This session taught me about a new flowchart symbol called "if/else." With this 
 ## Assignment 8
 
 I learned about two new flowchart symbols in today's session: "while" and "for." With these new symbols, I can create loops. For example, with the Fibonacci experience I made for this session, I used a "while" loop to make the counts, and for the "for" loop, I connected each other to have the solution. All in all, I have learned about connecting circles and understanding their purposes. Next time, I will create a flowchart to use a "do" loop, which is also one of the three loop symbols in a flowchart. Moreover, I got used to the functions more than before.
+
+## Assignment 9
