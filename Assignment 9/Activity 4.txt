@@ -27,7 +27,8 @@ Demonstrate While Loop
         Iteration number
    
     Process:
-        
+   
+        Display Fibonacci Sequence
         Initialize count
         Loop while count <= Iteration number
              Calculation of next Fibonacci number 
@@ -37,3 +38,18 @@ Demonstrate While Loop
     Return Value:
         
         None
+        
+Display Fibonacci Sequence
+    
+    Parameters:
+        
+        Fibonacci Next
+   
+    Process:
+        
+        Display Fibonacci Next
+             
+    Return Value:
+        
+        None
+
