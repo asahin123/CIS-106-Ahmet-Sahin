@@ -2,10 +2,10 @@ This program demonstrates while loop counting using the Fibonacci sequence based
 
 Main Program
     
-    Get Iteration Number
-    Process Fibonacci Sequence
+    Get Iteration number
+    Demonstrate While Loop
 
-Get Iteration Number
+Get Value
     
     Parameters:
         
@@ -13,26 +13,26 @@ Get Iteration Number
     
     Process:
         
-        Enter Iteration Number
-        Get value
+        Display information
+        Get Numbers of Element
     
     Return value:
         
-        Value
+        Numbers of Element
 
 Demonstrate While Loop
     
     Parameters:
         
-        iteration Number
+        Iteration number
    
     Process:
         
-        Initialize i
-        Loop for i from i equals to 3 to iterationNumber
-             i increased by 1
-             Calculate Fibonacci value
-             Display fibonacci sequence value
+        Initialize count
+        Loop while count <= Iteration number
+             Calculation of next Fibonacci number 
+             Display Fibonacci number
+             Increment count
              
     Return Value:
         
