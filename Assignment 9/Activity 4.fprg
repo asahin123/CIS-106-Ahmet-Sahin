@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahmet Halid Sahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-19 01:49:44 AM"/>
+        <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDc7MDE6NDM6NDEgUE07Mzg2NA=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTDFFMkhGSTsyMDIyLTEwLTE3OzExOjU0OjQwIFBNOzI7MzA1Mg=="/>
+        <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMTk7MDE6NDk6NDQgQU07Mzg7NDAyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program demonstrates while loop counting using the Fibonacci sequence based on a given number of iterations entered by the user."/>
+            <declare name="iterationNumber" type="Integer" array="False" size=""/>
+            <assign variable="iterationNumber" expression="GetValue() - 2"/>
+            <call expression="WhileLoop(iterationNumber)"/>
+            <comment text="References:https://www.youtube.com/watch?v=TeFiW-2kvTY"/>
+        </body>
+    </function>
+    <function name="GetValue" type="Integer" variable="numbersOfElement">
+        <parameters/>
+        <body>
+            <output expression="&quot;How many Fibonacci numbers you want to see?&quot;" newline="True"/>
+            <declare name="numbersOfElement" type="Integer" array="False" size=""/>
+            <input variable="numbersOfElement"/>
+        </body>
+    </function>
+    <function name="ProcessFibonacciSequence" type="None" variable="">
+        <parameters>
+            <parameter name="fibonacciNext" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="fibonacciNext" newline="True"/>
+        </body>
+    </function>
+    <function name="WhileLoop" type="None" variable="">
+        <parameters>
+            <parameter name="iterationNumber" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="fibonacci0" type="Integer" array="False" size=""/>
+            <declare name="fibonacci1" type="Integer" array="False" size=""/>
+            <declare name="fibonacciNext" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <assign variable="fibonacci0" expression="0"/>
+            <assign variable="fibonacci1" expression="1"/>
+            <output expression="&quot;Fibonacci Sequence&quot;" newline="True"/>
+            <call expression="ProcessFibonacciSequence(fibonacci0)"/>
+            <call expression="ProcessFibonacciSequence(fibonacci1)"/>
+            <while expression="count &lt;= iterationNumber">
+                <assign variable="fibonacciNext" expression="fibonacci1 + fibonacci0"/>
+                <call expression="ProcessFibonacciSequence(fibonacciNext)"/>
+                <assign variable="fibonacci0" expression="fibonacci1"/>
+                <assign variable="fibonacci1" expression="fibonacciNext"/>
+                <assign variable="count" expression="count + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
