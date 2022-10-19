@@ -48,8 +48,8 @@
             <assign variable="fibonacci0" expression="0"/>
             <assign variable="fibonacci1" expression="1"/>
             <output expression="&quot;Fibonacci Sequence&quot;" newline="True"/>
-            <call expression="ProcessFibonacciSequence(fibonacci0)"/>
-            <call expression="ProcessFibonacciSequence(fibonacci1)"/>
+            <call expression="DisplayFibonacciSequence(fibonacci0)"/>
+            <call expression="DisplayFibonacciSequence(fibonacci1)"/>
             <while expression="count &lt;= iterationNumber">
                 <assign variable="fibonacciNext" expression="fibonacci1 + fibonacci0"/>
                 <call expression="DisplayFibonacciSequence(fibonacciNext)"/>
