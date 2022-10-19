@@ -2,26 +2,28 @@
 
 # References:https://www.youtube.com/watch?v=TeFiW-2kvTY
 
+def displayFibonacciSequence(fibonacciNext):
+    print(fibonacciNext)
+
 def forLoop(iterationNumber):
     fibonacci0 = 0
     fibonacci1 = 1
-    print("Fibonacci Sequence")
-    print(fibonacci0)
-    print(fibonacci1)
-    for i in range(1, iterationNumber - 2 + 1, 1):
+    displayFibonacciSequence(fibonacci0)
+    displayFibonacciSequence(fibonacci1)
+    for i in range(1, iterationNumber + 1, 1):
         fibonacciNext = fibonacci1 + fibonacci0
-        print(fibonacciNext)
+        displayFibonacciSequence(fibonacciNext)
         fibonacci0 = fibonacci1
         fibonacci1 = fibonacciNext
 
 def getIterationNumber():
-    print("Enter an iteration number")
+    print("How many Fibonacci numbers you want to see?")
     iterationNumber = int(input())
+    iterationNumber = iterationNumber - 2
+    print("Fibonacci Sequence")
     
     return iterationNumber
 
 # Main
 iterationNumber = getIterationNumber()
 forLoop(iterationNumber)
-
-
