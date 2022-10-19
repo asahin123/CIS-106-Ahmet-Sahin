@@ -8,6 +8,8 @@ def displayFibonacciSequence(fibonacciNext):
 def getValue():
     print("How many Fibonacci numbers you want to see?")
     numbersOfElement = int(input())
+    numbersOfElement = numbersOfElement - 2
+    print("Fibonacci Sequence")
     
     return numbersOfElement
 
@@ -15,7 +17,6 @@ def whileLoop(iterationNumber):
     count = 1
     fibonacci0 = 0
     fibonacci1 = 1
-    print("Fibonacci Sequence")
     displayFibonacciSequence(fibonacci0)
     displayFibonacciSequence(fibonacci1)
     while count <= iterationNumber:
@@ -26,6 +27,6 @@ def whileLoop(iterationNumber):
         count = count + 1
 
 # Main
-iterationNumber = getValue() - 2
+iterationNumber = getValue()
 whileLoop(iterationNumber)
 
