@@ -4,9 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ahmet Halid Sahin"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-12 07:23:28 PM"/>
+        <attribute name="saved" value="2022-10-19 05:52:58 PM"/>
         <attribute name="created" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMDc7MDE6NDM6NDEgUE07Mzg2NA=="/>
         <attribute name="edited" value="QWhtZXQgSGFsaWQgU2FoaW47REVTS1RPUC1ONjNJOFBOOzIwMjItMTAtMTI7MDc6MjM6MjggUE07MzE7NDAyOA=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTDFFMkhGSTsyMDIyLTEwLTE5OzA1OjUyOjU4IFBNOzI7MzA2NA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,6 +17,14 @@
             <assign variable="iterationNumber" expression="getIterationNumber()"/>
             <call expression="forLoop(iterationNumber)"/>
             <comment text="References:https://www.youtube.com/watch?v=TeFiW-2kvTY"/>
+        </body>
+    </function>
+    <function name="DisplayFibonacciSequence" type="None" variable="">
+        <parameters>
+            <parameter name="fibonacciNext" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="fibonacciNext" newline="True"/>
         </body>
     </function>
     <function name="forLoop" type="None" variable="">
@@ -29,12 +38,11 @@
             <declare name="fibonacci1" type="Integer" array="False" size=""/>
             <assign variable="fibonacci0" expression="0"/>
             <assign variable="fibonacci1" expression="1"/>
-            <output expression="&quot;Fibonacci Sequence&quot;" newline="True"/>
-            <output expression="fibonacci0" newline="True"/>
-            <output expression="fibonacci1" newline="True"/>
-            <for variable="i" start="1" end="iterationNumber - 2" direction="inc" step="1">
+            <call expression="DisplayFibonacciSequence(fibonacci0)"/>
+            <call expression="DisplayFibonacciSequence(fibonacci1)"/>
+            <for variable="i" start="1" end="iterationNumber" direction="inc" step="1">
                 <assign variable="fibonacciNext" expression="fibonacci1 + fibonacci0"/>
-                <output expression="fibonacciNext" newline="True"/>
+                <call expression="DisplayFibonacciSequence(fibonacciNext)"/>
                 <assign variable="fibonacci0" expression="fibonacci1"/>
                 <assign variable="fibonacci1" expression="fibonacciNext"/>
             </for>
@@ -43,9 +51,11 @@
     <function name="getIterationNumber" type="Integer" variable="iterationNumber">
         <parameters/>
         <body>
-            <output expression="&quot;Enter an iteration number&quot;" newline="True"/>
+            <output expression="&quot;How many Fibonacci numbers you want to see?&quot;" newline="True"/>
             <declare name="iterationNumber" type="Integer" array="False" size=""/>
             <input variable="iterationNumber"/>
+            <assign variable="iterationNumber" expression="iterationNumber - 2"/>
+            <output expression="&quot;Fibonacci Sequence&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
