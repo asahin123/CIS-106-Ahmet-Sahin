@@ -35,4 +35,4 @@ I learned about two new flowchart symbols in today's session: "while" and "for."
 
 ## Assignment 9
 
-For this weeks session, I learned about while loops. The while loops are used to repeat all pieces of code within a specific rule loop. The point note is that when the while loops, the code has to produce a FALSE result at some point. If this condition is wrong, the code continues to repeat indefinitely.
+I learned about while loops and their logic for this week's session. The while loops are used to repeat all pieces of code within a specific rule loop. The point note is that when the while loops, the code has to produce a FALSE result at some point. If this condition is wrong, the code continues to repeat indefinitely. Also, I turned back to the structure of functions. I remembered that processing functions could not have outputs or inputs. Overall, I have mastered the logic in while loops and understand the systems very well. I will use this advantage for my next session.
