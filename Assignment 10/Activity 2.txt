@@ -1,1 +1,35 @@
+This program demonstrates that allows the user to think of a number between 0 and 100, inclusive. Then have the program try to guess the user’s number. Start at the midpoint (50) and ask the user if their number is (h)igher, (l)ower, or (e)qual to the guess.
 
+Main Program
+    Get a Guess 
+    Process Guessed Number
+    
+Get a Guess
+    Parameters:
+        Guessed Number
+    Process:
+        Display if guessed number is higher, lower, or equal to 50
+        Get a guessed number
+        
+    Return Value:
+        Guess
+        
+Process Guessed Number
+    Parameters:
+        None
+    Process:
+        Initialize guess
+        Loop
+            Display Guess
+            While guess check = 0
+    Return Value:
+        None
+        
+Display Number in Mind
+    Parameters:
+        Guess Count
+        Guessed Number
+    Process:
+        Display Number in Mind
+    Return Value:
+        None
