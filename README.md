@@ -36,3 +36,7 @@ I learned about two new flowchart symbols in today's session: "while" and "for."
 ## Assignment 9
 
 I learned about while loops and their logic for this week's session. The while loops are used to repeat all pieces of code within a specific rule loop. The point note is that when the while loops, the code has to produce a FALSE result at some point. If this condition is wrong, the code continues to repeat indefinitely. Also, I turned back to the structure of functions. I remembered that processing functions could not have outputs or inputs. Overall, I have mastered the logic in while loops and understand the systems very well. I will use this advantage for my next session.
+
+## Assignment 10
+
+This week, the class taught me how the do-while loop works in the flowchart and what we use for programming. Its working logic and structure are the same as the while loop. The only difference is that the condition statement we specify at the beginning of the while loop is at the end of the do-while loop. The program continues without entering the loop if the condition statement does not meet in the while loop. Still, since this condition statement is placed at the end of the do-while loop, our program executes the operations in the do-while at least once.
