@@ -1,35 +1,63 @@
 This program demonstrates that allows the user to think of a number between 0 and 100, inclusive. Then have the program try to guess the user’s number. Start at the midpoint (50) and ask the user if their number is (h)igher, (l)ower, or (e)qual to the guess.
 
 Main Program
-    Get a Guess 
-    Process Guessed Number
+    Display Game Introduction
+    Process Guessing Number
     
-Get a Guess
-    Parameters:
-        Guessed Number
-    Process:
-        Display if guessed number is higher, lower, or equal to 50
-        Get a guessed number
-        
-    Return Value:
-        Guess
-        
-Process Guessed Number
+Display Game Introduction
     Parameters:
         None
     Process:
-        Initialize guess
+        Display Introduction Info
+    Return Value:
+        None
+        
+Process Guessing Number
+    Parameters:
+        None
+    Process:
+        Initialize lower value
+        Initialize higher value
+        Initialize initial guess
+        Initialize count
         Loop
-            Display Guess
-            While guess check = 0
+            Increment count
+            Display question
+            Get a Character           
+            Either:
+                Calculation of higher value
+            Or:
+                Either:
+                    Check = 1
+                    Display number in mind
+                Or:
+                    Calculation of lower value
+            While check == 0
     Return Value:
         None
         
 Display Number in Mind
     Parameters:
-        Guess Count
-        Guessed Number
+        Count
+        Value
     Process:
-        Display Number in Mind
+        Number found in user's mind
     Return Value:
         None
+        
+Display Question
+    Parameters:
+        Value
+    Process:
+        Display choice to select L, H or E
+    Return Value:
+        None
+        
+Get a Character
+    Parameters:
+        None
+    Process:
+        Input Character
+    Return Value:
+        Character       
+        
