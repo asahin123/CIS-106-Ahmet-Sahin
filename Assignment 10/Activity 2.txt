@@ -3,6 +3,7 @@ This program demonstrates that allows the user to think of a number between 0 an
 Main Program
     Display Game Introduction
     Process Guessing Number
+    Display Count
     
 Display Game Introduction
     Parameters:
@@ -18,32 +19,19 @@ Process Guessing Number
     Process:
         Initialize lower value
         Initialize higher value
-        Initialize initial guess
         Initialize count
         Loop
             Increment count
+            Calculate midpoint
             Display question
             Get a Character           
             Either:
                 Calculation of higher value
             Or:
-                Either:
-                    Check = 1
-                    Display number in mind
-                Or:
-                    Calculation of lower value
-            While check == 0
+                Calculation of a lower value
+            While Character is not E
     Return Value:
-        None
-        
-Display Number in Mind
-    Parameters:
         Count
-        Value
-    Process:
-        Number found in user's mind
-    Return Value:
-        None
         
 Display Question
     Parameters:
@@ -61,3 +49,10 @@ Get a Character
     Return Value:
         Character       
         
+Display Count
+    Parameters:
+        Count
+    Process:
+        Display Count
+    Return Value:
+        None
