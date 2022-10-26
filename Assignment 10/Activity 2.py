@@ -2,11 +2,11 @@
 
 # References:https://www.youtube.com/watch?v=TjkJQly2YCw
 
+def displayCount(count):
+    print("After " + str(count) + " attempts, the number in your mind is found")
+
 def displayGameIntroduction():
     print("Please, think of a number between 0 and 100, inclusive.")
-
-def displayNumberInMind(count, value):
-    print("After " + str(count) + " attempts, the number in your mind is found as " + str(value))
 
 def displayQuestion(value):
     print("Is the number in your mind (h)igher than, (l)ower than or (e)qual to " + str(value) + ". Choose h, l or e.")
@@ -16,13 +16,11 @@ def getACharacter():
     
     return character
 
-def guessingNumber():
+def guessingNumber(count):
     guess = " "
-    check = 0
-    count = 0
+    value = 50
     lowerValue = 0
     higherValue = 100
-    value = 50
     while True:    #This simulates a Do Loop
         count = count + 1
         displayQuestion(value)
@@ -31,15 +29,15 @@ def guessingNumber():
             higherValue = value
             value = value - float(higherValue - lowerValue) / 2
         else:
-            if guess == "e" or guess == "E":
-                check = 1
-                displayNumberInMind(count, value)
-            else:
+            if guess == "h" or guess == "H":
                 lowerValue = value
                 value = value + float(higherValue - lowerValue + 1) / 2
-        if not(check == 0): break   #Exit loop
+        if not(guess != "e"): break   #Exit loop
+    
+    return count
 
 # Main
+count = 0
 displayGameIntroduction()
-guessingNumber()
-
+count = guessingNumber(count)
+displayCount(count)
