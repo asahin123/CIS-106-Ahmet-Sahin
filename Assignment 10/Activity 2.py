@@ -25,14 +25,14 @@ def guessingNumber(count):
         count = count + 1
         displayQuestion(value)
         guess = getACharacter()
-        if guess == "L":
+        if guess == "L" or guess == "l":
             higherValue = value
             value = value - (higherValue - lowerValue) / 2
         else:
-            if guess == "H":
+            if guess == "H" or guess == "h":
                 lowerValue = value
                 value = value + (higherValue - lowerValue) / 2
-        if not(guess != "E"): break   #Exit loop
+        if not(guess != "e"): break   #Exit loop
     
     return count
 
