@@ -9,7 +9,7 @@ def displayGameIntroduction():
     print("Please, think of a number between 0 and 100, inclusive.")
 
 def displayQuestion(value):
-    print("Is the number in your mind (h)igher than, (l)ower than or (e)qual to " + str(value) + ". Choose h, l or e.")
+    print("Is the number in your mind (h)igher than, (l)ower than or (e)qual to " + str(value) + " Choose h, l or e.")
 
 def getACharacter():
     character = input()
@@ -27,11 +27,11 @@ def guessingNumber(count):
         guess = getACharacter()
         if guess == "l" or guess == "L":
             higherValue = value
-            value = value - float(higherValue - lowerValue) / 2
+            value = value - (higherValue - lowerValue) / 2
         else:
             if guess == "h" or guess == "H":
                 lowerValue = value
-                value = value + float(higherValue - lowerValue + 1) / 2
+                value = value + (higherValue - lowerValue + 1) / 2
         if not(guess != "e"): break   #Exit loop
     
     return count
@@ -41,3 +41,4 @@ count = 0
 displayGameIntroduction()
 count = guessingNumber(count)
 displayCount(count)
+
