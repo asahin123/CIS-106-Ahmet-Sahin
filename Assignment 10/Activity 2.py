@@ -3,7 +3,7 @@
 # References:https://www.youtube.com/watch?v=TjkJQly2YCw
 
 def displayCount(count):
-    print("" + str(count) + " guesses, guess, , guess")
+    print("" + str(count) + " guesse, guess, , guess")
 
 def displayGameIntroduction():
     print("Please, think of a number between 0 and 100, inclusive.")
