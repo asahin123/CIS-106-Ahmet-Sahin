@@ -3,13 +3,13 @@
 # References:https://www.youtube.com/watch?v=TjkJQly2YCw
 
 def displayCount(count):
-    print("After" + str(count) + " Ali")
+    print("After " + str(count) + " guesses, the number in your mind is found")
 
 def displayGameIntroduction():
     print("Please, think of a number between 0 and 100, inclusive.")
 
 def displayQuestion(value):
-    print("Is the number in your mind (H)igher than, (L)ower than or (E)qual to " + str(value) + " Choose H, L or E.")
+    print("Is the number in your mind (h)igher than, (l)ower than or (e)qual to " + str(value) + " Choose h, l or e.")
 
 def getACharacter():
     character = input()
@@ -25,11 +25,11 @@ def guessingNumber(count):
         count = count + 1
         displayQuestion(value)
         guess = getACharacter()
-        if guess == "L" or guess == "l":
+        if guess == "l" or guess == "L":
             higherValue = value
             value = value - (higherValue - lowerValue) / 2
         else:
-            if guess == "H" or guess == "h":
+            if guess == "h" or guess == "H":
                 lowerValue = value
                 value = value + (higherValue - lowerValue) / 2
         if not(guess != "e"): break   #Exit loop
