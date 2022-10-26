@@ -6,7 +6,7 @@ def displayCount(count):
     print("After " + str(count) + " attempts, the number in your mind is found")
 
 def displayGameIntroduction():
-    print("Please, think of a number between 0 and 100, inclusive.")
+    pass
 
 def displayQuestion(value):
     print("Is the number in your mind (h)igher than, (l)ower than or (e)qual to " + str(value) + " Choose h, l or e.")
