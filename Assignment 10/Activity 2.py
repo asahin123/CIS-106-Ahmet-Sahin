@@ -31,7 +31,7 @@ def guessingNumber(count):
         else:
             if guess == "h" or guess == "H":
                 lowerValue = value
-                value = value + (higherValue - lowerValue + 1) / 2
+                value = value + (higherValue - lowerValue) / 2
         if not(guess != "e"): break   #Exit loop
     
     return count
