@@ -1,0 +1,76 @@
+This program asks the user to enter a year and month number and then look up the corresponding month name and number of days and display the information. Continue accepting input until the user enters an invalid year or invalid month number. 
+
+Main Program
+  Process Leap Year
+  
+Process Leap Year 
+  Parameters:
+      Days, Months
+  Process:
+      Initialize Year
+      Initialize Month
+          Loop
+              Get Years
+              Either:
+                  Get Month
+                  Assign days of months
+                  Assign name of months
+                  Display Results
+              Or:
+                  Display finish
+              While Year == 0
+  Return Value:
+      None
+
+Check Leap Year
+    Parameters:
+        Year
+    Process:
+        Display February if its 28 or 29 days.
+            Either:
+                February is 29 days
+            Or:
+                February is 28 days.
+    Return Value:
+        February
+
+Get Month
+    Parameters:
+        None
+    Process
+        Either
+            
+    Or
+
+Assign Days of Months
+    Parameters:
+        Year, days
+    Process:
+        Assign day count per month
+    Return Value:
+       None 
+              
+Assign Names of months
+    Parameters:
+        months
+    Process:
+       Assign name of months 
+    Return Value:
+       None 
+       
+Assign Days of Months
+    Parameters:
+        Year, days
+    Process:
+        Assign day count per month
+    Return Value:
+       None 
+                          
+              
+    
+    
+  
+    
+  
+  
+
