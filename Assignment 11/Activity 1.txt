@@ -1,12 +1,12 @@
 This program asks the user to enter a year and month number and then look up the corresponding month name and number of days and display the information. Continue accepting input until the user enters an invalid year or invalid month number. 
 
 Main Program
-  Process Leap Year
+    Process Leap Year
   
 Process Leap Year 
-  Parameters:
+    Parameters:
       Days, Months
-  Process:
+    Process:
       Initialize Year
       Initialize Month
           Loop
@@ -19,34 +19,26 @@ Process Leap Year
               Or:
                   Display finish
               While Year == 0
-  Return Value:
-      None
+    Return Value:
+        None
 
 Check Leap Year
     Parameters:
         Year
     Process:
-        Display February if its 28 or 29 days.
+        Display February if its 28 or 29 days
             Either:
                 February is 29 days
             Or:
-                February is 28 days.
+                February is 28 days
     Return Value:
         February
-
-Get Month
-    Parameters:
-        None
-    Process
-        Either
-            
-    Or
 
 Assign Days of Months
     Parameters:
         Year, days
     Process:
-        Assign day count per month
+        Initialize day count per month
     Return Value:
        None 
               
@@ -56,15 +48,48 @@ Assign Names of months
     Process:
        Assign name of months 
     Return Value:
-       None 
+       None
        
-Assign Days of Months
+Get Months
     Parameters:
-        Year, days
+        None
     Process:
-        Assign day count per month
+        Type a number from 0 to 12 to enter a month
     Return Value:
-       None 
+        month
+        
+Get Years
+    Parameters:
+        None
+    Process:
+        Enter a year which is higher than zero
+    Return Value:
+        Year
+        
+Display Info
+    Parameters:
+        value
+    Process:
+        Enter a valid value
+    Return value:
+        none
+
+Display Finish
+    Parameters:
+        None
+    Process:
+        The program has stopped
+    Return Value:
+        None
+        
+Display Results
+    Parameters:
+        Days, months, valuemonth
+    Process:
+        Display results to see if it is leap year or not
+    Return Value:
+        None
+
                           
               
     
