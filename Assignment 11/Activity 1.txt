@@ -5,67 +5,68 @@ Main Program
   
 Process Leap Year 
     Parameters:
-      Days, Months
+      None
     Process:
-      Initialize Year
-      Initialize Month
+      Initialize Array days
+      Initialize Array months
           Loop
               Get Years
               Either:
                   Get Month
-                  Assign days of months
-                  Assign name of months
+                  Assign Days of Months
+                  Assign Name of Months
                   Display Results
               Or:
-                  Display finish
+                  Display Finish
               While Year == 0
     Return Value:
         None
+
+Get Years
+    Parameters:
+        None
+    Process:
+        Display Info
+    Return Value:
+        Year
+        
+Get Months
+    Parameters:
+        None
+    Process:
+        Display Info
+    Return Value:
+        month
+
+Assign Days of Months
+    Parameters:
+        Array days
+        valueYear
+    Process:
+        Assign number of days of months
+        Check Leap Year
+    Return Value:
+       None 
 
 Check Leap Year
     Parameters:
         Year
     Process:
-        Display February if its 28 or 29 days
             Either:
                 February is 29 days
             Or:
                 February is 28 days
     Return Value:
-        February
-
-Assign Days of Months
-    Parameters:
-        Year, days
-    Process:
-        Initialize day count per month
-    Return Value:
-       None 
+        february
               
-Assign Names of months
+Assign Names of Months
     Parameters:
-        months
+        Array months
     Process:
        Assign name of months 
     Return Value:
        None
-       
-Get Months
-    Parameters:
-        None
-    Process:
-        Type a number from 0 to 12 to enter a month
-    Return Value:
-        month
-        
-Get Years
-    Parameters:
-        None
-    Process:
-        Enter a year which is higher than zero
-    Return Value:
-        Year
-        
+               
 Display Info
     Parameters:
         value
@@ -84,7 +85,9 @@ Display Finish
         
 Display Results
     Parameters:
-        Days, months, valuemonth
+        Array days 
+        Array months 
+        valueMonth
     Process:
         Display results to see if it is leap year or not
     Return Value:
