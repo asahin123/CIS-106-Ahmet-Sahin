@@ -1,32 +1,26 @@
 This program asks the user to enter a year and month number and then look up the corresponding month name and number of days and display the information. Continue accepting input until the user enters an invalid year or invalid month number. 
 
 Main Program
-    Process Leap Year
-  
-Process Leap Year 
-    Parameters:
-      None
-    Process:
-      Initialize Array days
-      Initialize Array months
-          Loop
-              Get Years
-              Either:
-                  Get Month
-                  Assign Days of Months
-                  Assign Name of Months
-                  Display Results
-              Or:
-                  Display Finish
-              While Year == 0
-    Return Value:
-        None
+    Loop
+        Get Years
+        Either:
+            Get Month
+            Either:
+                Get Month Name
+                Get Month Days
+                Display Results
+            Or:
+            Display Finish
+        Or:
+            Display Finish
+        While Year > 0 and Month >= 1 and Month <= 12
 
 Get Years
     Parameters:
         None
     Process:
         Display Info
+        Get Year
     Return Value:
         Year
         
@@ -35,18 +29,29 @@ Get Months
         None
     Process:
         Display Info
+        Get Month
     Return Value:
         month
 
-Assign Days of Months
+Get Month Name
     Parameters:
-        Array days
-        valueYear
+        Month
     Process:
-        Assign number of days of months
-        Check Leap Year
+        Declare array
+        Look up month name
     Return Value:
-       None 
+        Month Name
+               
+Get Month Days
+    Parameters:
+        valueYear
+        Month
+    Process:
+        Declare array
+        Check Leap Year
+        Look up month days
+    Return Value:
+        Month Days
 
 Check Leap Year
     Parameters:
@@ -59,14 +64,6 @@ Check Leap Year
     Return Value:
         february
               
-Assign Names of Months
-    Parameters:
-        Array months
-    Process:
-       Assign name of months 
-    Return Value:
-       None
-               
 Display Info
     Parameters:
         value
@@ -85,20 +82,9 @@ Display Finish
         
 Display Results
     Parameters:
-        Array days 
-        Array months 
-        valueMonth
+        Month name
+        Month days
     Process:
-        Display results to see if it is leap year or not
+        Display results
     Return Value:
         None
-
-                          
-              
-    
-    
-  
-    
-  
-  
-
