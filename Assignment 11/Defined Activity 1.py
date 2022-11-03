@@ -3,15 +3,15 @@
 # References: https://youtu.be/YPoxpgkftPI
 
 def checkLeapYear(valueYear):
-    remainder = valueYear - int(float(valueYear) / 100) * 100
+    remainder = valueYear % 100
     if remainder == 0:
-        remainder = valueYear - int(float(valueYear) / 400) * 400
+        remainder = valueYear % 400
         if remainder == 0:
             february = 29
         else:
             february = 28
     else:
-        remainder = valueYear - int(float(valueYear) / 4) * 4
+        remainder = valueYear % 4
         if remainder == 0:
             february = 29
         else:
@@ -78,7 +78,7 @@ def getYears():
     
     return year
 
-# Main
+Main
 while True:    #This simulates a Do Loop
     valueYear = getYears()
     if valueYear >= 1:
