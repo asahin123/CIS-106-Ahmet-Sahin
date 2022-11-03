@@ -96,7 +96,7 @@ while True:    #This simulates a Do Loop
         if valueMonth >= 1 and valueMonth <= 12:
             day = getMonthDays(valueYear, valueMonth)
             month = getMonthName(valueMonth)
-            displayResults(day, month)
+            displayResults(day, month, valueYear)
         else:
             displayFinish()
     else:
