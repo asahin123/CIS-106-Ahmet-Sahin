@@ -31,7 +31,7 @@ def displayInfo(value):
 
     
 def displayResults(day, month):
-    print(month + " has " + str(day) + " days.")
+    print(month + " " + str(valueYear) + " has " + str(day) + " days.")
 
     
 def getMonthDays(valueYear, valueMonth):
