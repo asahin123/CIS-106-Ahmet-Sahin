@@ -4,7 +4,7 @@ Main Program
     Loop
         Get Years
         Either:
-            Get Month
+            Get Months
             Either:
                 Get Month Name
                 Get Month Days
@@ -29,7 +29,7 @@ Get Months
         None
     Process:
         Display Info
-        Get Month
+        Get Months
     Return Value:
         month
 
