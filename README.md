@@ -40,3 +40,5 @@ I learned about while loops and their logic for this week's session. The while l
 ## Assignment 10
 
 This week, the class taught me how the do-while loop works in the flowchart and what we use for programming. Its working logic and structure are the same as the while loop. The only difference is that the condition statement we specify at the beginning of the while loop is at the end of the do-while loop. The program continues without entering the loop if the condition statement does not meet in the while loop. Still, since this condition statement is placed at the end of the do-while loop, our program executes the operations in the do-while at least once.
+
+## Assignment 11
