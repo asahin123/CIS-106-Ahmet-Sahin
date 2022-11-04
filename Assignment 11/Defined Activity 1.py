@@ -1,4 +1,6 @@
-# This program asks the user to enter a year and month number and then look up the corresponding month name and number of days and display the information. Continue accepting input until the user enters an invalid year or invalid month number.
+# This program asks the user to enter a year and month number and then look up the
+corresponding month name and number of days and display the information.
+Continue accepting input until the user enters an invalid year or invalid month number.
 
 # References: https://youtu.be/YPoxpgkftPI
 
@@ -91,4 +93,6 @@ while True:    #This simulates a Do Loop
             displayFinish()
     else:
         displayFinish()
-    if not(valueYear > 0 and valueMonth >= 1 and valueMonth <= 12): break   #Exit loop
+    if not(valueYear > 0 and valueMonth >= 1 and valueMonth <= 12)
+    : break   
+        #Exit loop
