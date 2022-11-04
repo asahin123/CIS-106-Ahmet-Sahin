@@ -86,8 +86,23 @@ def get_years():
     
     return year
 
+# def main():
+    #while True:    
+        #value_year = get_years()
+        #if value_year >= 1:
+            #value_month = get_months()
+        #if value_month >= 1 and value_month <= 12:
+            #day = get_month_days(value_year, value_month)
+            #month = get_month_name(value_month)
+            #display_results(day, month, value_year)
+        #else:
+            #display_finish()    
+    #else:
+        #display_finish()
+    #if not (value_year > 0 & value_month >= 1 & value_month <= 12):
+
 def main():
-    while True:    
+    do {    
         value_year = get_years()
         if value_year >= 1:
             value_month = get_months()
@@ -99,5 +114,6 @@ def main():
             display_finish()    
     else:
         display_finish()
-    if not (value_year > 0 & value_month >= 1 & value_month <= 12):
+    }
+    while (value_year > 0 & value_month >= 1 & value_month <= 12);
 main()
