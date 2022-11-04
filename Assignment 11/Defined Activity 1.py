@@ -92,7 +92,7 @@ def main():
 while True:    #This simulates a Do Loop
     value_year = get_years()
     if value_year >= 1:
-        valueMonth = get_months()
+        value_month = get_months()
         if value_month >= 1 and value_month <= 12:
             day = get_month_days(value_year, value_month)
             month = get_month_name(value_month)
