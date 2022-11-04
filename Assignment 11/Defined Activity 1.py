@@ -4,16 +4,16 @@ Continue accepting input until the user enters an invalid year or invalid month 
 
 # References: https://youtu.be/YPoxpgkftPI
 
-def check_leap_year(valueYear):
-    remainder = valueYear % 100
+def check_leap_year(value_year):
+    remainder = value_year % 100
     if remainder == 0:
-        remainder = valueYear % 400
+        remainder = value_year % 400
         if remainder == 0:
             february = 29
         else:
             february = 28
     else:
-        remainder = valueYear % 4
+        remainder = value_year % 4
         if remainder == 0:
             february = 29
         else:
@@ -21,23 +21,23 @@ def check_leap_year(valueYear):
     return february
 
 
-def displayFinish():
+def display_finish():
     print("Program is stopped successfully")
     
 
-def displayInfo(value):
+def display_info(value):
     print("Please enter a valid " + value + " :")
     
 
-def displayResults(day, month, valueYear):
+def display_results(day, month, valueYear):
     print(month + " " + str(valueYear) + " has " + str(day) + " days.")
     
 
-def getMonthDays(value_Year, value_Month):
+def get_month_days(value_Year, value_Month):
     days = [0] * (12)
     
     days[0] = 31
-    days[1] = checkLeapYear(valueYear)
+    days[1] = check_leap_year(value_year)
     days[2] = 31
     days[3] = 30
     days[4] = 31
@@ -48,12 +48,12 @@ def getMonthDays(value_Year, value_Month):
     days[9] = 31
     days[10] = 30
     days[11] = 31
-    monthDays = days[valueMonth - 1]
+    month_days = days[value_month - 1]
     
-    return monthDays
+    return month_days
 
 
-def get_Month_Name(monthNumber):
+def get_month_name(month_number):
     months = [""] * (12)
     
     months[0] = "January"
@@ -73,35 +73,35 @@ def get_Month_Name(monthNumber):
     return monthName
 
 
-def getMonths():
-    displayInfo("Month")
+def get_months():
+    display_info("Month")
     month = int(input())
     
     return month
 
 
-def getYears():
-    displayInfo("Year")
+def get_years():
+    display_info("Year")
     year = int(input())
     
     return year
 
 
-def main()
+def main():
 
 while True:    #This simulates a Do Loop
-    valueYear = getYears()
-    if valueYear >= 1:
-        valueMonth = getMonths()
-        if valueMonth >= 1 and valueMonth <= 12:
-            day = getMonthDays(valueYear, valueMonth)
-            month = getMonthName(valueMonth)
-            displayResults(day, month, valueYear)
+    value_year = get_years()
+    if value_year >= 1:
+        valueMonth = get_months()
+        if value_month >= 1 and value_month <= 12:
+            day = get_month_days(value_year, value_month)
+            month = get_month_name(value_month)
+            display_results(day, month, value_year)
         else:
-            displayFinish()
+            display_finish()
     else:
-        displayFinish()
-    if not(valueYear > 0 and valueMonth >= 1 and valueMonth <= 12)
+        display_finish()
+    if not(value_year > 0 and value_month >= 1 and value_month <= 12)
     : break   
         #Exit loop
 main()
