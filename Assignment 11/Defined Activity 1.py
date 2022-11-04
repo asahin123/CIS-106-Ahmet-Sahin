@@ -4,7 +4,7 @@ Continue accepting input until the user enters an invalid year or invalid month 
 
 # References: https://youtu.be/YPoxpgkftPI
 
-def checkLeapYear(valueYear):
+def check_leap_year(valueYear):
     remainder = valueYear % 100
     if remainder == 0:
         remainder = valueYear % 400
