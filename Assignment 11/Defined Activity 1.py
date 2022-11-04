@@ -97,8 +97,8 @@ def main():
             month = get_month_name(value_month)
             display_results(day, month, value_year)
         else:
-            display_finish()
-    if not(value_year > 0 and value_month >= 1 and value_month <= 12)    
+            display_finish()    
     else:
         display_finish()
+    if not(value_year > 0 and value_month >= 1 and value_month <= 12)    
 main()
