@@ -30,7 +30,7 @@ def display_info(value):
     
 
 def display_results(day, month, value_year):
-    print(month + " " + str(value_year) + " has " + str(day) + " days.")
+    print(month + str(value_year) + " has " + str(day) + " days.")
     
 
 def get_month_days(value_year, value_month):
@@ -75,14 +75,14 @@ def get_month_name(month_number):
 
 def get_months():
     display_info("Month")
-    month = int(input(yaer and month))
+    month = int(input())
     
     return month
 
 
 def get_years():
     display_info("Year")
-    year = int(input(year and month))
+    year = int(input())
     
     return year
 
