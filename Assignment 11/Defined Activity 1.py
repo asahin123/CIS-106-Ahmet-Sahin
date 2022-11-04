@@ -100,5 +100,5 @@ def main():
             display_finish()    
     else:
         display_finish()
-    if not(value_year > 0 & value_month >= 1 & value_month <= 12)
+    if not value_year > 0 & value_month >= 1 & value_month <= 12:
 main()
