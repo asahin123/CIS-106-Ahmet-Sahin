@@ -4,16 +4,16 @@ Continue accepting input until the user enters an invalid year or invalid month 
 
 # References: https://youtu.be/YPoxpgkftPI
 
-def check_Leap_Year(value_Year):
-    remainder = value_Year % 100
+def checkLeapYear(valueYear):
+    remainder = valueYear % 100
     if remainder == 0:
-        remainder = value_Year % 400
+        remainder = valueYear % 400
         if remainder == 0:
             february = 29
         else:
             february = 28
     else:
-        remainder = value_Year % 4
+        remainder = valueYear % 4
         if remainder == 0:
             february = 29
         else:
@@ -21,23 +21,23 @@ def check_Leap_Year(value_Year):
     return february
 
 
-def display_Finish():
+def displayFinish():
     print("Program is stopped successfully")
     
 
-def display_Info(value):
+def displayInfo(value):
     print("Please enter a valid " + value + " :")
     
 
-def display_Results(day, month, valueYear):
+def displayResults(day, month, valueYear):
     print(month + " " + str(valueYear) + " has " + str(day) + " days.")
     
 
-def get_Month_Days(value_Year, value_Month):
+def getMonthDays(value_Year, value_Month):
     days = [0] * (12)
     
     days[0] = 31
-    days[1] = check_Leap_Year(value_Year)
+    days[1] = checkLeapYear(valueYear)
     days[2] = 31
     days[3] = 30
     days[4] = 31
@@ -48,12 +48,12 @@ def get_Month_Days(value_Year, value_Month):
     days[9] = 31
     days[10] = 30
     days[11] = 31
-    month_Days = days[value_Month - 1]
+    monthDays = days[valueMonth - 1]
     
-    return month_Days
+    return monthDays
 
 
-def get_Month_Name(month_Number):
+def get_Month_Name(monthNumber):
     months = [""] * (12)
     
     months[0] = "January"
@@ -68,7 +68,7 @@ def get_Month_Name(month_Number):
     months[9] = "October"
     months[10] = "November"
     months[11] = "December"
-    month_Name = months[month_Number - 1]
+    monthName = months[monthNumber - 1]
     
     return monthName
 
