@@ -81,7 +81,7 @@ def get_months():
 
 
 def get_years():
-    display_info("Year")
+    display_info("year and month")
     year = int(input())
     
     return year
