@@ -89,7 +89,7 @@ def get_years():
 
 def main():
 
-while True:    #This simulates a Do Loop
+while True:    
     value_year = get_years()
     if value_year >= 1:
         value_month = get_months()
@@ -103,5 +103,4 @@ while True:    #This simulates a Do Loop
         display_finish()
     if not(value_year > 0 and value_month >= 1 and value_month <= 12)
     : break   
-        #Exit loop
 main()
