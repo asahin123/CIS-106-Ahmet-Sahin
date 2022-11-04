@@ -1,5 +1,5 @@
-# This program asks the user to enter a year and month number and then look up the
-# corresponding month name and number of days and display the information.
+# This program asks the user to enter a year and month number and then look up the:
+# corresponding month name and number of days and display the information:
 # Continue accepting input until the user enters an invalid year or invalid month number.
 
 # References: https://youtu.be/YPoxpgkftPI
@@ -74,7 +74,7 @@ def get_month_name(month_number):
 
 
 def get_months():
-    display_info("Month")
+    display_info("year and month")
     month = int(input())
     
     return month
