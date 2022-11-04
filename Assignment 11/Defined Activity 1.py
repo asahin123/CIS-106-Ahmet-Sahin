@@ -89,7 +89,7 @@ def get_years():
 
 def main():
     while True:    
-        value_year = get_years(year)
+        value_year = get_years()
         if value_year >= 1:
             value_month = get_months()
         if value_month >= 1 and value_month <= 12:
@@ -100,5 +100,5 @@ def main():
             display_finish()
     else:
         display_finish()
-    if (value_year > 0 and value_month >= 1 and value_month <= 12)
+    if (value_year = 0 and value_month >= 1 and value_month <= 12)
 main()
