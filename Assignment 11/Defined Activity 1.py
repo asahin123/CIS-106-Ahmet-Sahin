@@ -30,7 +30,7 @@ def display_info(value):
     
 
 def display_results(day, month, value_year):
-    print(month + str(value_year) + " has " + str(day) + " days.")
+    print(str(month) + str(value_year) + " has " + str(day) + " days.")
     
 
 def get_month_days(value_year, value_month):
