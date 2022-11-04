@@ -17,18 +17,21 @@ def checkLeapYear(valueYear):
         if remainder == 0:
             february = 29
         else:
-            february = 28
-    
+            february = 28    
     return february
+
 
 def displayFinish():
     print("Program is stopped successfully")
+    
 
 def displayInfo(value):
     print("Please enter a valid " + value + " :")
+    
 
 def displayResults(day, month, valueYear):
     print(month + " " + str(valueYear) + " has " + str(day) + " days.")
+    
 
 def getMonthDays(valueYear, valueMonth):
     days = [0] * (12)
@@ -49,6 +52,7 @@ def getMonthDays(valueYear, valueMonth):
     
     return monthDays
 
+
 def getMonthName(monthNumber):
     months = [""] * (12)
     
@@ -68,11 +72,13 @@ def getMonthName(monthNumber):
     
     return monthName
 
+
 def getMonths():
     displayInfo("Month")
     month = int(input())
     
     return month
+
 
 def getYears():
     displayInfo("Year")
@@ -80,8 +86,9 @@ def getYears():
     
     return year
 
-# Main
-main()
+
+def main()
+
 while True:    #This simulates a Do Loop
     valueYear = getYears()
     if valueYear >= 1:
@@ -97,3 +104,4 @@ while True:    #This simulates a Do Loop
     if not(valueYear > 0 and valueMonth >= 1 and valueMonth <= 12)
     : break   
         #Exit loop
+main()
