@@ -100,5 +100,5 @@ def main():
             display_finish()
     else:
         display_finish()
-    if ("February 2020 has 29 days")
+    if (value_year > 0 and value_month >= 1 and value_month <= 12)
 main()
