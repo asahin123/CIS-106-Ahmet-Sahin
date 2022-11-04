@@ -1,6 +1,6 @@
 # This program asks the user to enter a year and month number and then look up the
-corresponding month name and number of days and display the information.
-Continue accepting input until the user enters an invalid year or invalid month number.
+# corresponding month name and number of days and display the information.
+# Continue accepting input until the user enters an invalid year or invalid month number.
 
 # References: https://youtu.be/YPoxpgkftPI
 
@@ -29,11 +29,11 @@ def display_info(value):
     print("Please enter a valid " + value + " :")
     
 
-def display_results(day, month, valueYear):
-    print(month + " " + str(valueYear) + " has " + str(day) + " days.")
+def display_results(day, month, value_year):
+    print(month + " " + str(value_year) + " has " + str(day) + " days.")
     
 
-def get_month_days(value_Year, value_Month):
+def get_month_days(value_year, value_month):
     days = [0] * (12)
     
     days[0] = 31
@@ -68,9 +68,9 @@ def get_month_name(month_number):
     months[9] = "October"
     months[10] = "November"
     months[11] = "December"
-    monthName = months[monthNumber - 1]
+    month_name = months[month_number - 1]
     
-    return monthName
+    return month_name
 
 
 def get_months():
