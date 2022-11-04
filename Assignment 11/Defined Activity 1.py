@@ -98,7 +98,7 @@ def main():
             display_results(day, month, value_year)
         else:
             display_finish()
+    if not(value_year > 0 and value_month >= 1 and value_month <= 12)    
     else:
         display_finish()
-    if not(value_year > 0 and value_month >= 1 and value_month <= 12)
 main()
