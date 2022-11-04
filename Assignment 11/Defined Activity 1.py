@@ -74,15 +74,15 @@ def get_month_name(month_number):
 
 
 def get_months():
-    display_info("year and month")
-    month = int(input())
+    display_info("Month")
+    month = int(input(yaer and month))
     
     return month
 
 
 def get_years():
-    display_info("year and month")
-    year = int(input())
+    display_info("Year")
+    year = int(input(year and month))
     
     return year
 
