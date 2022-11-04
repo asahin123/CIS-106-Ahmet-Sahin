@@ -81,6 +81,7 @@ def getYears():
     return year
 
 # Main
+main()
 while True:    #This simulates a Do Loop
     valueYear = getYears()
     if valueYear >= 1:
