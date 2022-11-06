@@ -1,0 +1,1 @@
+This program asks the user to enter grade scores they wouldlike to enter.After the scores are entered, calculate and display the high, low, and average for the entered scores.
