@@ -12,6 +12,10 @@ Get List
         Grades
     Process:
         Loop while value >= 0
+            Either:
+                add value to list
+            Or:
+                return grades
     Return Value:
         grades
         
@@ -27,11 +31,9 @@ Get Max Grade
     Parameters:
         gradelist
     Process:
-        For w in gradelist
+        Loop for grade
             Either:
-                max grade < w
-            Or:
-                max grade = w
+                max grade = w         
     Return Value:
         max grade
       
@@ -39,10 +41,8 @@ Get Min Grade
     Parameters:
         gradelist
     Process:
-        For w in gradelist
+        Loop for grade
             Either:
-                min grade > w
-            Or:
                 min grade = w
     Return Value:
         min grade
@@ -51,11 +51,7 @@ Get Average Grade
     Parameters:
         gradelist
     Process:
-        For w in gradelist:
-            Either:
-                grade sum = grade sum + w
-            Or:
-                average = grade sum / list size
+        Loop for grade sum
     Return Value:
         average
         
