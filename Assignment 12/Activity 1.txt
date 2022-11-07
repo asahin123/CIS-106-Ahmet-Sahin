@@ -1,1 +1,69 @@
-This program asks the user to enter grade scores they wouldlike to enter.After the scores are entered, calculate and display the high, low, and average for the entered scores.
+This program asks the user to enter grade scores they would like to enter.After the scores are entered, calculate and display the high, low, and average for the entered scores.
+
+Main Program
+    Get List
+    Get Max Grade
+    Get Min Grade
+    Get Average Grade
+    Display Results
+
+Get List
+    Parameters:
+        Grades
+    Process:
+        Loop while value >= 0
+    Return Value:
+        grades
+        
+Get List Value
+    Parameters:
+        None
+    Process:
+        Please enter the grade
+    Return Value:
+        grade value
+        
+Get Max Grade
+    Parameters:
+        gradelist
+    Process:
+        For w in gradelist
+            Either:
+                max grade < w
+            Or:
+                max grade = w
+    Return Value:
+        max grade
+      
+Get Min Grade
+    Parameters:
+        gradelist
+    Process:
+        For w in gradelist
+            Either:
+                min grade > w
+            Or:
+                min grade = w
+    Return Value:
+        min grade
+    
+Get Average Grade
+    Parameters:
+        gradelist
+    Process:
+        For w in gradelist:
+            Either:
+                grade sum = grade sum + w
+            Or:
+                average = grade sum / list size
+    Return Value:
+        average
+        
+Display Results
+    Parameters:
+        max grades, min grades, ave grades
+    Process:
+        Display grades as max, min, and average
+    Return value:
+        None
+                
