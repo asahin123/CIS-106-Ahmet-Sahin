@@ -15,7 +15,7 @@ Get List
             Either:
                 add value to list
             Or:
-                return grades
+                break
     Return Value:
         grades
         
