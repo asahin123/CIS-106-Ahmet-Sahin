@@ -1,10 +1,10 @@
-#This program asks the user to enter grade scores they would 
-#like to enter.After the scores are entered, calculate
-#and display the high, low, and average for the entered scores.
+# This program asks the user to enter grade scores they would 
+# like to enter.After the scores are entered, calculate
+# and display the high, low, and average for the entered scores.
 
-#References:https://www.youtube.com/results?
-#search_query=difference
-#+between+dynamic+and+static+arrays
+# References:https://www.youtube.com/results?
+# search_query=difference
+# +between+dynamic+and+static+arrays
 
 
 def display_result(max_grades, min_grades, ave_grades):
