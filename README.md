@@ -44,3 +44,5 @@ This week, the class taught me how the do-while loop works in the flowchart and 
 ## Assignment 11
 
 This week, I have learned about the defined value arrays. Arrays are tough because understanding which array to use on a program takes time. For this reason, I needed help teaching arrays. However, I checked for definitions for arrays. I made myself understand arrays better, so To make a technical definition, data structures that keep the same data in the memory are called arrays. In programming, we can only hold one value on a variable. Arrays allow us to have more than one value under a variable. Also, the reference I shared with the class helped me understand the assignment for this week.
+
+## Assignment 12
