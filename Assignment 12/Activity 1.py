@@ -63,7 +63,7 @@ def get_average_grade(gradelist):
     return average
  
 
-def main()
+def main():
     grade_list = []
 
     grades = get_list(grade_list)
