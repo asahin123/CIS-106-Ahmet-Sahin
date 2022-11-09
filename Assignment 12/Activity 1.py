@@ -64,14 +64,13 @@ def get_average_grade(gradelist):
  
 
 def main()
+    grade_list = []
 
-grade_list = []
-
-grades = get_list(grade_list)
-max_grade = get_max_grade(grades)
-min_grade = get_min_grade(grades)
-ave_grade = get_average_grade(grades)
-display_result(max_grade, min_grade, ave_grade)
+    grades = get_list(grade_list)
+    max_grade = get_max_grade(grades)
+    min_grade = get_min_grade(grades)
+    ave_grade = get_average_grade(grades)
+    display_result(max_grade, min_grade, ave_grade)
 
 
 main()
