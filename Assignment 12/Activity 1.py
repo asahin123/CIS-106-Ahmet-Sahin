@@ -1,3 +1,12 @@
+#This program asks the user to enter grade scores they would 
+#like to enter.After the scores are entered, calculate
+#and display the high, low, and average for the entered scores.
+
+#References:https://www.youtube.com/results?
+#search_query=difference
+#+between+dynamic+and+static+arrays
+
+
 def display_result(max_grades, min_grades, ave_grades):
     print("Maximum Grade is " + str(max_grades))
     print("Minimum Grade is " + str(min_grades))
@@ -52,6 +61,7 @@ def get_average_grade(gradelist):
     average = grade_sum / list_size
 
     return average
+ 
 
 def main()
 
@@ -62,5 +72,6 @@ max_grade = get_max_grade(grades)
 min_grade = get_min_grade(grades)
 ave_grade = get_average_grade(grades)
 display_result(max_grade, min_grade, ave_grade)
+
 
 main()
