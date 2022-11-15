@@ -2,25 +2,10 @@ This program asks the user for a single line of text containing a first name and
 
 Main Program
 
-Get First Name
-Get Last Name
+Get Full Name
 Display Full Name
 
-Get First Name
-    Parameters:
-        firstname
-    Process:
-        Input firstname
-    Return value:
-        firstname
-        
-Get Last Name
-    Parameters:
-        lastname
-    Process:
-        Input lastname
-    Return value:
-        lastname
+
         
 Display Full Name
     Parameters:
