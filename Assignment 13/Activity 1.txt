@@ -1,4 +1,6 @@
-This program asks the user for a single line of text containing a first name and last name and print out the name in the form last name, first initial, such as Lastname, F.
+This program asks the user for a single line of text containing a 
+first name and last name and print out the name in the form last name, 
+first initial, such as Lastname, F.
 
 Main Program
     Get Full Name
@@ -17,7 +19,7 @@ Process Full Name
     Parameters:
         fullname
     Process:
-        Convert the full name into titled name.
+        Convert the full name into last name, first initial using string methods.
     Return value:
         name
         
@@ -25,10 +27,6 @@ Display Full Name
     Parameters:
         processed name
     Process:
-        Display full name in the form "lastname, F." using string methods.
+        Display full name in the form "lastname, F.".
     Return value:
         none
-    
-    
-    
-        
