@@ -11,7 +11,7 @@ def get_full_name():
 
 def process_full_name(fullname):
     name_list = fullname.split()
-    name = name_list[-1].title() + ", " + name_list[0][0:1].title() + "."
+    name = name_list[0].title() + ", " + name_list[0][0:1].title() + "."
     return name
 
 
