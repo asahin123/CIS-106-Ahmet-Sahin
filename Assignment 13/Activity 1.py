@@ -2,7 +2,7 @@
 # and last name and print out the name in the form last name,
 # first initial, such as Lastname, F.
 
-# https://www.w3schools.com/python/python_strings.asp
+# References: https://www.w3schools.com/python/python_strings.asp
 
 def get_full_name():
     fullname = input("Enter your first and last name : ")
