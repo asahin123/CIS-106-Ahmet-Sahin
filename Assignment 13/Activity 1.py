@@ -5,7 +5,7 @@
 # https://www.w3schools.com/python/python_strings.asp
 
 def get_full_name():
-    fullname = input("Enter Full Name : ")
+    fullname = input("Enter your first and last name : ")
     return fullname
 
 
