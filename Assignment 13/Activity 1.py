@@ -10,10 +10,10 @@ def get_full_name():
 
 
 def process_full_name(fullname):
-    if len(fullname) == 0 or fullname.isspace() or len(fullname.split()) == 1:
-        name = "Wrong Index, Please enter a name"
+    name_list = fullname.split()
+    if len(name_list) < 2:
+        name = "Please enter first and last"
     else:
-        name_list = fullname.split()
         name = name_list[-1].title() + ", " + name_list[0][0:1].title() + "."
     return name
 
