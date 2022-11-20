@@ -1,4 +1,43 @@
 This program displays high, low, and average scores based on input from scores.txt.
 
 Main Program
+  Read File
+  
+Read File
+  Parameters:
+    filename
+  Process:
+    try:
+        Open read-only text file
+            Loop for-each value of file
+                Display title
+                Display text
+            Evaluate max, min, and average score values
+            Display result            
+    except:
+  Return value:
+    none
+    
+Display Title
+  Parameters:
+    line0, line1
+  Process:
+    Print title in format
+  Return value:
+    none
+    
+Display Text
+  Parameters:
+    line0, line1
+  Process:
+    Print text in format
+  Return value:
+    none
 
+Display Result
+  Parameters:
+    max, min, ave
+  Process:
+    Print result for max, min, and average score values in format
+  Return value:
+    None
