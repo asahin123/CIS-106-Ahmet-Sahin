@@ -1,0 +1,4 @@
+This program displays high, low, and average scores based on input from scores.txt.
+
+Main Program
+
