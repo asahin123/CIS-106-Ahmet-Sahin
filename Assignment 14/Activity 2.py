@@ -13,7 +13,7 @@ def read_file(filename):
         with open(filename, "r") as file:
             list_scores = []
             for line in file:
-                lines = line.strip().split(",") # Name,Score  ==>  ["Name","Score"]
+                lines = line.strip().split(",")
                 line1 = lines[1]
                 if line1.isnumeric():
                     list_scores.append(int(lines[1]))
