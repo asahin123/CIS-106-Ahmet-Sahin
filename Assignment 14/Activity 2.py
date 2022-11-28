@@ -1,4 +1,5 @@
-# This program displays high, low, and average scores based on input from scores.txt.
+# This program displays high, low,
+# and average scores based on input from scores.txt.
 
 # References:https://youtu.be/Uh2ebFW8OYM
 
@@ -40,7 +41,6 @@ def main():
     filename = "scores.txt"
     list_scores = read_file(filename)
     file_process(list_scores)
-
 
 main()
 
