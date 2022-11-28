@@ -41,7 +41,6 @@ def main():
     filename = "scores.txt"
     list_scores = read_file(filename)
     file_process(list_scores)
+    
 
 main()
-
-
