@@ -2,6 +2,7 @@ This program displays high, low, and average scores based on input from scores.t
 
 Main Program
   Read File
+  File Process
   
 Read File
   Parameters:
@@ -10,34 +11,25 @@ Read File
     try:
         Open read-only text file
             Loop for-each value of file
-                Display title
-                Display text
-            Evaluate max, min, and average score values
-            Display result            
+                Get list_scores
     except:
   Return value:
-    none
+    list_scores
     
-Display Title
+File Process
   Parameters:
-    line0, line1
+    list_scores
   Process:
-    Print title in format
-  Return value:
-    none
-    
-Display Text
-  Parameters:
-    line0, line1
-  Process:
-    Print text in format
-  Return value:
-    none
+    Evaluation of maximum, minimum, and average
+    Display Result
+  Return Value:
+    None
 
 Display Result
   Parameters:
-    max, min, ave
+    list_scores, max, min, ave
   Process:
-    Print result for max, min, and average score values in format
+    Print list_scores
+    Print maximum, minimum, and average score values in format
   Return value:
     None
