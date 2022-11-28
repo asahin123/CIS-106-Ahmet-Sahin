@@ -1,3 +1,7 @@
+# This program displays high, low, and average scores based on input from scores.txt.
+
+# References:https://youtu.be/Uh2ebFW8OYM
+
 def display_result(list_scores, max, min, ave):
     print()
     print("Score List : ")
