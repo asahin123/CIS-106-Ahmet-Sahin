@@ -52,3 +52,7 @@ For this week, I have learned about dynamic arrays and used a different IDE call
 ## Assignment 13
 
 For this week, I have learned about strings. Strings are Inputs and outputs to the computer are in the form of strings; i.e., inputs and outputs are strings. Every language has a string (text) data type or can be obtained as strings of characters. It exists as a class in object-oriented languages. Hence, it is the most used data type in programming languages. There is a lot of work done with the String data type. For example, formatting the output, combining two texts, selecting a subtext of a text, converting letters, comparing two texts, and selecting a subtext or a character in a text. Methods that do things like searching are called string operations. For these reasons, this week provides the most important information about programming. I need to learn and master strings to be a programmer.
+
+## Assignment 14
+
+For this week,
