@@ -5,7 +5,7 @@
 
 def display_result(list_scores, max, min, ave):
     print()
-    print("Score List : ")
+    print("score List : ")
     print(list_scores)
     print()
     print("Maximum Score : {0:.2f}".format(max))
