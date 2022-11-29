@@ -8,9 +8,9 @@ def display_result(list_scores, max, min, ave):
     print("score List : ")
     print(list_scores)
     print()
-    print("Maximum Score : {0:.2f}".format(max))
-    print("Minimum Score : {0:.2f}".format(min))
-    print("Average Score : {0:.2f}".format(ave))
+    print("Maximum score : {0:.2f}".format(max))
+    print("Minimum score : {0:.2f}".format(min))
+    print("Average score : {0:.2f}".format(ave))
 
 
 def read_file(filename):
@@ -55,5 +55,3 @@ def main():
 
 
 main()
-
-
