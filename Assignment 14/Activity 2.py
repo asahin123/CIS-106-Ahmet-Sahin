@@ -18,7 +18,7 @@ def read_file(filename):
         with open(filename, "r") as file:
             list_scores = []
             for line in file:
-                lines = line.strip().split(",")
+                lines = line.strip().split(",") # Name,Score  ==>  ["Name","Score"]
                 line1 = lines[1]
                 if line1.isnumeric():
                     list_scores.append(int(lines[1]))
@@ -27,20 +27,33 @@ def read_file(filename):
         print(exception)
 
 
-def file_process(list_scores):
+def calculate_minimum(list_scores):
+    min_value = min(list_scores)
+    return min_value
+
+
+def calculate_maximum(list_scores):
+    max_value = max(list_scores)
+    return max_value
+
+
+def calculate_average(list_scores):
     summation = 0
     for score in list_scores:
         summation = summation + int(score)
-    max_value = max(list_scores)
-    min_value = min(list_scores)
     average = summation / len(list_scores)
-    display_result(list_scores, max_value, min_value, average)
+    return average
 
 
 def main():
     filename = "scores.txt"
     list_scores = read_file(filename)
-    file_process(list_scores)
-    
+    min_value = calculate_minimum(list_scores)
+    max_value = calculate_maximum(list_scores)
+    ave_value = calculate_average(list_scores)
+    display_result(list_scores, max_value, min_value, ave_value)
+
 
 main()
+
+
