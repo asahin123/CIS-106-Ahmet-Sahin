@@ -1,0 +1,80 @@
+Main Program
+	Convert XML file to CSV
+	Read File Plant
+	Assign Arrays
+	Process Plant List
+
+Convert XML file to CSV
+	Parameters:
+		none
+	Process:
+		import ElementTree
+import csv
+open plant_catalog.csv
+	Return Value:
+		none
+
+Read File Plant
+ 	Parameters:
+		filename
+	Process:
+		open filename
+		for line in file:
+			line.strip().split(“,”)
+			list_plant_lines.append()
+		list_plant_lines.sort()
+	Return Value:
+		list_plants
+	
+Assign Arrays
+	Parameters:
+		list_plants
+index
+	Process:
+		list_plants_intems.append(line[index])
+	Return Value:
+		list_plants_items
+
+Process Plant_list
+	Parameters:
+		lpa_names
+		lpb_names
+		lp_zones
+		lp_light
+		lp_price
+	Process:
+		display_title
+		while k != len(lpa_names):
+			for j in range(i, len(lpa_names)):
+				if lpa_names == lpb_names:
+					display_list
+				else:
+					display_result
+		display_result
+	Return Value:
+		none
+
+Display result
+	Parameters:
+		None
+	Process:
+		Print out with format
+	Return Value:
+		None
+
+Display list
+	Parameters:
+		None
+	Process:
+		Print out list items 
+		With respect to given requirements
+	Return Value:
+		None
+
+Display title
+	Parameters:
+		None
+	Porocess:
+		Print out title of the plant list
+	Return Value:
+		None
