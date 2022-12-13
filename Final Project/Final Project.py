@@ -16,8 +16,9 @@ def display_list(name, zone, light, price):
     pnspc = "                              "
     znspc = "             "
     lgspc = "                "
-    prspc = "         "
-    print(name + pnspc[len(name):] + "  " + zone + znspc[len(zone):] + "  " + light + lgspc[len(light):] + price)
+    # prspc = "         "
+    print(name + pnspc[len(name):] + "  " + zone + znspc[len(zone):]\
+          + "  " + light + lgspc[len(light):] + price)
 
 
 def display_result(item, tp):
