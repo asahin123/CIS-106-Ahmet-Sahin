@@ -26,7 +26,7 @@ def display_title(title_common, title_botanical,
                    + title_light.rjust(14) + title_price.rjust(14)
     print()
     print(title_part_1.rjust(44) + title_part_2)
-    print("------------------------------------------------")
+    #print("------------------------------------------------")
 
 
 def process_calculation(common, botanical, zone, light, price):
