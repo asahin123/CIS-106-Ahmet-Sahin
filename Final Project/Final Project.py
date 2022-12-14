@@ -1,3 +1,10 @@
+# This program shows the lists of the plants for their
+# common name, botanical name, zone,
+# light, and prices and taken the average price for every item.
+
+# References: https://youtu.be/pTB0EiLXUC8
+
+
 def display_result(number_of_items, total_price):
     print()
     text = "     {0} item(s)  -  ${1:.2f} Average Price"
