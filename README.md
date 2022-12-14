@@ -58,3 +58,5 @@ For this week, I have learned about strings. Strings are Inputs and outputs to t
 For this weeks session, I have learned about files. This week was important because with files, Python provides us with an important feature to read data from and write data to a file. Mostly, in programming languages, all values or data are stored in some variable which is variable in nature. Because the data will only be stored in these variables during execution and will be lost when the program execution is complete. Therefore, it is better to save this data permanently using files. Also, error handlings for files are important, so in future I will study about how to handle the errors and exceptions.
 
 ## Final Project
+
+Finally we have come to an end of a challenging, but an intructive class.
