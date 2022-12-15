@@ -11,31 +11,17 @@ def display_result(number_of_items, total_price):
     print(text.format(number_of_items, total_price / number_of_items))
 
 
-def display_plant_list(common_name, botanical_name,
-                       zone_name, light_name, price_name):
-    title_part_1 = common_name + " (" + botanical_name + ")"
-    title_part_2 = zone_name.rjust(11) \
-                   + light_name.rjust(18) + price_name.rjust(10)
-    print(title_part_1.rjust(44) + title_part_2)
-
-
-def display_title(title_common, title_botanical,
-                  title_zone, title_light, title_price):
-    title_part_1 = title_common + " (" + title_botanical + ")"
-    title_part_2 = title_zone.rjust(11) \
-                   + title_light.rjust(14) + title_price.rjust(14)
-    print()
-    print(title_part_1.rjust(44) + title_part_2)
-# print("------------------------------------------------")
+def display_plant_list(common_name, botanical_name, zone_name, light_name, price_name):
+    title_part_1 = common_name + " (" + botanical_name + ")" + " - "
+    title_part_2 = zone_name + " - " + light_name + " - " + price_name
+    print(title_part_1 + title_part_2)
 
 
 def process_calculation(common, botanical, zone, light, price):
-    display_title(common[0], botanical[0], zone[0], light[0], price[0])
     total_price = 0
     number_of_items = 0
     for x in range(1, len(common) - 1):
-        display_plant_list(common[x], botanical[x],
-                           zone[x], light[x], price[x])
+        display_plant_list(common[x], botanical[x], zone[x], light[x], price[x])
         total_price = total_price + float(price[x].lstrip("$"))
         number_of_items = number_of_items + 1
     display_result(number_of_items, total_price)
