@@ -11,8 +11,7 @@ def display_result(number_of_items, total_price):
         text = "     {0} item(s)  -  ${1:.2f} Average Price"
         print(text.format(number_of_items, total_price / number_of_items))
     except ZeroDivisionError:
-        print("Division by Zero because of the variable 'number_of_item' is zero")
-        print("Check the method display_result")
+        print("Missing or bad data")
         raise SystemExit
 
 
@@ -60,8 +59,7 @@ def list_plants(filename):
                 if re.search("PRICE", line):
                     price.append(line[line.find(">") + 1:line.find("/") - 1])
     except Exception as messages:
-        print(messages, " * ")
-        print("Buradan gecti")
+        print("missing or bad data")
     process_calculation(common, botanical, zone, light, price)
 
 
@@ -73,7 +71,7 @@ def load_xml(filename):
         with open(filename, 'wb') as file_name:
             file_name.write(resp.content)
     except Exception as msg:
-        print("write() argument must be str, not bytes in load_xml function")
+        print("write() argument must be str in load_xml function")
         raise SystemExit
 
 
