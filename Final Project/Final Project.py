@@ -65,13 +65,11 @@ def list_plants(filename):
 
 def load_xml(filename):
     import urllib.request
-    url = 'https://www.w3schools.com/xml/plant_catalog.xml'
-    resp = requests.get(url)
+    url = C:\Users\iamagamerbitch\Desktop\plant_name_list.xml
     try:
-        with open(filename, 'wb') as file_name:
-            file_name.write(resp.content)
-    except Exception as msg:
-        print("write() argument must be str in load_xml function")
+        page = urllib.request.urlopen(url).read().decode()
+    except Exception as exception:
+        print(str(exception) + " reading " + url)
         raise SystemExit
 
 
