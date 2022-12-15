@@ -6,9 +6,14 @@
 
 
 def display_result(number_of_items, total_price):
-    print()
-    text = "     {0} item(s)  -  ${1:.2f} Average Price"
-    print(text.format(number_of_items, total_price / number_of_items))
+    try:
+        print()
+        text = "     {0} item(s)  -  ${1:.2f} Average Price"
+        print(text.format(number_of_items, total_price / number_of_items))
+    except ZeroDivisionError:
+        print("Division by Zero because of the variable 'number_of_item' is zero")
+        print("Check the method display_result")
+        raise SystemExit
 
 
 def display_plant_list(common_name, botanical_name,
@@ -22,7 +27,8 @@ def process_calculation(common, botanical, zone, light, price):
     total_price = 0
     number_of_items = 0
     for x in range(1, len(common) - 1):
-        display_plant_list(common[x], botanical[x], zone[x], light[x], price[x])
+        display_plant_list(common[x], botanical[x],
+                           zone[x], light[x], price[x])
         total_price = total_price + float(price[x].lstrip("$"))
         number_of_items = number_of_items + 1
     display_result(number_of_items, total_price)
@@ -40,32 +46,40 @@ def list_plants(filename):
     zone.append("Zone")
     light.append("Light")
     price.append("Price")
-    with open(filename, "r") as file:
-        for line in file:
-            if re.search("COMMON", line):
-                common.append(line[line.find(">") + 1:line.find("/") - 1])
-            if re.search("BOTANICAL", line):
-                botanical.append(line[line.find(">") + 1:line.find("/") - 1])
-            if re.search("ZONE", line):
-                zone.append(line[line.find(">") + 1:line.find("/") - 1])
-            if re.search("LIGHT", line):
-                light.append(line[line.find(">") + 1:line.find("/") - 1])
-            if re.search("PRICE", line):
-                price.append(line[line.find(">") + 1:line.find("/") - 1])
+    try:
+        with open(filename, "r") as file:
+            for line in file:
+                if re.search("COMMON", line):
+                    common.append(line[line.find(">") + 1:line.find("/") - 1])
+                if re.search("BOTANICAL", line):
+                    botanical.append(line[line.find(">") + 1:line.find("/") - 1])
+                if re.search("ZONE", line):
+                    zone.append(line[line.find(">") + 1:line.find("/") - 1])
+                if re.search("LIGHT", line):
+                    light.append(line[line.find(">") + 1:line.find("/") - 1])
+                if re.search("PRICE", line):
+                    price.append(line[line.find(">") + 1:line.find("/") - 1])
+    except Exception as messages:
+        print(messages, " * ")
+        print("Buradan gecti")
     process_calculation(common, botanical, zone, light, price)
 
 
-def load_xml():
+def load_xml(filename):
     import requests
-    url = 'https://www.w3schools.com/xml/plant_catalog.xml'
+    url = 'https://www.w3schools.com/xml/pplant_catalog.xml'
     resp = requests.get(url)
-    with open('plant_name_list.xml', 'wb') as filename:
-        filename.write(resp.content)
+    try:
+        with open(filename, 'wb') as file_name:
+            file_name.write(resp.content)
+    except Exception as msg:
+        print("write() argument must be str, not bytes in load_xml function")
+        raise SystemExit
 
 
 def main():
-    load_xml()
     filename = 'plant_name_list.xml'
+    load_xml(filename)
     list_plants(filename)
 
 
