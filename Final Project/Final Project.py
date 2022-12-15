@@ -51,7 +51,8 @@ def list_plants(filename):
                 if re.search("COMMON", line):
                     common.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("BOTANICAL", line):
-                    botanical.append(line[line.find(">") + 1:line.find("/") - 1])
+                    botanical.append(line[line.find(">")
+                                          + 1:line.find("/") - 1])
                 if re.search("ZONE", line):
                     zone.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("LIGHT", line):
