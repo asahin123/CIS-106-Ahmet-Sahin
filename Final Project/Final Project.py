@@ -65,7 +65,7 @@ def list_plants(filename):
 
 def load_xml(filename):
     import urllib.request
-    url = C:\Users\iamagamerbitch\Desktop\plant_name_list.xml
+    url = 'https://www.w3schools.com/xml/plant_catalog.xml'
     try:
         page = urllib.request.urlopen(url).read().decode()
     except Exception as exception:
