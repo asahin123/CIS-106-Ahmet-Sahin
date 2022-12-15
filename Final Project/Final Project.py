@@ -11,7 +11,8 @@ def display_result(number_of_items, total_price):
     print(text.format(number_of_items, total_price / number_of_items))
 
 
-def display_plant_list(common_name, botanical_name, zone_name, light_name, price_name):
+def display_plant_list(common_name, botanical_name,
+                       zone_name, light_name, price_name):
     title_part_1 = common_name + " (" + botanical_name + ")" + " - "
     title_part_2 = zone_name + " - " + light_name + " - " + price_name
     print(title_part_1 + title_part_2)
