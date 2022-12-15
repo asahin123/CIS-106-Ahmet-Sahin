@@ -64,7 +64,7 @@ def list_plants(filename):
 
 
 def load_xml(filename):
-    import requests
+    import urllib.request
     url = 'https://www.w3schools.com/xml/plant_catalog.xml'
     resp = requests.get(url)
     try:
