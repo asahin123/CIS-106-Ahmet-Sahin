@@ -72,19 +72,11 @@ def list_plants(filename):
 def load_xml(filename):
     import urllib.request
 
-    data = []
     url = "https://www.w3schools.com/xml/plant_catalog.xml"
     try:
-        page = urllib.request.urlopen(url).read().decode("UTF-8")
+        page = urllib.request.urlopen(url).read().decode()
         with open(filename, 'w') as file_name:
             file_name.write(str(page))
-        for line in page.split("\n"):
-            data.append(line)
-        if len(data) == 2:
-            raise FileNotFoundError
-    except Exception as exception:
-        print(str(exception) + " reading " + url)
-        raise SystemExit
     except FileNotFoundError:
         print("File is missing")
         raise SystemExit
