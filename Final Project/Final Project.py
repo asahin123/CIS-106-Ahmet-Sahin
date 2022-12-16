@@ -75,8 +75,8 @@ def load_xml(filename):
         page = urllib.request.urlopen(url).read().decode()
         with open(filename, 'w') as file_name:
             file_name.write(str(page))
-    except Exception as exception:
-        print(str(exception) + " reading " + url)
+    except FileNotFoundError:
+        print("File is missing")
         raise SystemExit
 
 
