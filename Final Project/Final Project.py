@@ -15,11 +15,9 @@ def display_result(number_of_items, total_price):
         raise SystemExit
 
 
-def display_list(common_name, botanical_name,
-zone_name, light_name, price_name):
-    title_part_1 = common_name + " (" + botanical_name + ")" + " - "
-    title_part_2 = zone_name + " - " + light_name + " - " + price_name
-    print(title_part_1 + title_part_2)
+def display_plant_list(common, botanical, zone, light, price):
+    text = "{0} ({1}) - {2} - {3} - {4}"
+    print(text.format(common, botanical, zone, light, price))
 
 
 def process_calculation(common, botanical, zone, light, price):
@@ -27,7 +25,7 @@ def process_calculation(common, botanical, zone, light, price):
     number_of_items = 0
     try:
         for x in range(len(common)):
-            display_list(common[x], botanical[x], zone[x], light[x], price[x])
+            display_plant_list(common[x], botanical[x], zone[x], light[x], price[x])
             total_price = total_price + float(price[x].lstrip("$"))
             number_of_items = number_of_items + 1
         display_result(number_of_items, total_price)
