@@ -35,7 +35,7 @@ def process_calculation(common, botanical, zone, light, price):
         display_result(number_of_items, total_price)
     except IndexError:
         print()
-        print("List index out of range")
+        print("Error: Missing or bad data.")
         raise SystemExit
 
 
