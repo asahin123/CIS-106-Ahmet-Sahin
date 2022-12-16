@@ -77,8 +77,6 @@ def load_xml(filename):
         page = urllib.request.urlopen(url).read().decode("UTF-8")
         with open(filename, 'w') as file_name:
             file_name.write(str(page))
-        #for line in page.split("\n"):
-        #    data.append(line)
     except Exception as exception:
         print(str(exception) + " reading " + url)
         raise SystemExit
