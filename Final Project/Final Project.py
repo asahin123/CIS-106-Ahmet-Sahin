@@ -8,7 +8,7 @@
 def display_result(number_of_items, total_price):
     try:
         print()
-        text = "     {0} item(s)  -  ${1:.2f} Average Price"
+        text = "{0} items - ${1:.2f} average price"
         print(text.format(number_of_items, total_price / number_of_items))
     except ZeroDivisionError:
         print("Division by Zero because of the variable is zero")
@@ -25,17 +25,16 @@ zone_name, light_name, price_name):
 def process_calculation(common, botanical, zone, light, price):
     total_price = 0
     number_of_items = 0
-    xx = len(common)
     try:
-        # for x in range(len(common)):
-        for x in range(xx + 1):
+        for x in range(len(common)):
             display_plant_list(common[x], botanical[x], zone[x], light[x], price[x])
             total_price = total_price + float(price[x].lstrip("$"))
             number_of_items = number_of_items + 1
         display_result(number_of_items, total_price)
     except IndexError:
         print()
-        print("Error: Missing or bad data.")
+        print("Error: Missing or Index out of range")
+        # print("Error: Missing or bad data.")
         raise SystemExit
 
 
