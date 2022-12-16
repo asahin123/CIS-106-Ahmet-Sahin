@@ -74,11 +74,13 @@ def load_xml(filename):
 
     url = "https://www.w3schools.com/xml/plant_catalog.xml"
     try:
-        page = urllib.request.urlopen(url).read().decode()
+        page = urllib.request.urlopen(url).read().decode("UTF-8")
         with open(filename, 'w') as file_name:
             file_name.write(str(page))
-    except FileNotFoundError:
-        print("File is missing")
+        #for line in page.split("\n"):
+        #    data.append(line)
+    except Exception as exception:
+        print(str(exception) + " reading " + url)
         raise SystemExit
 
 
