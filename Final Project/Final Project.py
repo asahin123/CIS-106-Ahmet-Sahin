@@ -12,7 +12,6 @@ def display_result(number_of_items, total_price):
         print(text.format(number_of_items, total_price / number_of_items))
     except ZeroDivisionError:
         print("Division by Zero because of the variable is zero")
-        print("Check the method display_result")
         raise SystemExit
 
 
@@ -26,9 +25,9 @@ zone_name, light_name, price_name):
 def process_calculation(common, botanical, zone, light, price):
     total_price = 0
     number_of_items = 0
-    for x in range(0, len(common)):
-        display_plant_list(common[x], botanical[x],
-        zone[x], light[x], price[x])
+    for x in range(len(common)):
+        display_plant_list
+        (common[x], botanical[x],zone[x], light[x], price[x])
         total_price = total_price + float(price[x].lstrip("$"))
         number_of_items = number_of_items + 1
     display_result(number_of_items, total_price)
