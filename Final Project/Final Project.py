@@ -36,6 +36,8 @@ def process_calculation(common, botanical, zone, light, price):
     except AssertionError:
         print("Error: Missing or bad data.")
         raise SystemExit
+    except TypeError as e:
+        print(e)
 
 
 def list_plants(filename):
