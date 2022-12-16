@@ -38,6 +38,8 @@ def process_calculation(common, botanical, zone, light, price):
         raise SystemExit
     except TypeError as e:
         print(e)
+    except FileNotFoundError:
+        print("File is missing"
 
 
 def list_plants(filename):
