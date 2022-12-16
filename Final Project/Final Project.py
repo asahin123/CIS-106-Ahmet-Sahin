@@ -68,7 +68,7 @@ def load_xml(filename):
 
     url = "https://www.w3schools.com/xml/plant_catalog.xml"
     try:
-        page = urllib.request.urlopen(url).read().decode("UTF-8")
+        page = urllib.request.urlopen(url).read().decode()
         with open(filename, 'w') as file_name:
             file_name.write(str(page))
     except Exception as exception:
