@@ -77,7 +77,7 @@ def load_xml(filename):
 
 
 def main():
-    filename = 'plant_name_list.xml'
+    filename = 'plant_catalog.xml'
     load_xml(filename)
     list_plants(filename)
 
