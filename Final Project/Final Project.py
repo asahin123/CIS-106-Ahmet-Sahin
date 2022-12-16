@@ -25,12 +25,18 @@ zone_name, light_name, price_name):
 def process_calculation(common, botanical, zone, light, price):
     total_price = 0
     number_of_items = 0
-    for x in range(len(common)):
-        display_plant_list
-        (common[x], botanical[x], zone[x], light[x], price[x])
-        total_price = total_price + float(price[x].lstrip("$"))
-        number_of_items = number_of_items + 1
-    display_result(number_of_items, total_price)
+    xx = len(common)
+    try:
+        # for x in range(len(common)):
+        for x in range(xx + 1):
+            display_plant_list(common[x], botanical[x], zone[x], light[x], price[x])
+            total_price = total_price + float(price[x].lstrip("$"))
+            number_of_items = number_of_items + 1
+        display_result(number_of_items, total_price)
+    except IndexError:
+        print()
+        print("List index out of range")
+        raise SystemExit
 
 
 def list_plants(filename):
