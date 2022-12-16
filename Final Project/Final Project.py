@@ -44,7 +44,7 @@ def list_plants(filename):
     import re
 
     common = []
-    botanical = []
+    botan = []
     zone = []
     light = []
     price = []
@@ -54,8 +54,7 @@ def list_plants(filename):
                 if re.search("COMMON", line):
                     common.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("BOTANICAL", line):
-                    botanical.append
-                    (line[line.find(">") + 1:line.find("/") - 1])
+                    botan.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("ZONE", line):
                     zone.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("LIGHT", line):
@@ -66,7 +65,7 @@ def list_plants(filename):
         msg = "the file " + filename + " is not found"
         print(msg)
     else:
-        process_calculation(common, botanical, zone, light, price)
+        process_calculation(common, botan, zone, light, price)
 
 
 def load_xml(filename):
