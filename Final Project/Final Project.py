@@ -27,7 +27,7 @@ def process_calculation(common, botanical, zone, light, price):
     number_of_items = 0
     for x in range(len(common)):
         display_plant_list
-        (common[x], botanical[x],zone[x], light[x], price[x])
+        (common[x], botanical[x], zone[x], light[x], price[x])
         total_price = total_price + float(price[x].lstrip("$"))
         number_of_items = number_of_items + 1
     display_result(number_of_items, total_price)
