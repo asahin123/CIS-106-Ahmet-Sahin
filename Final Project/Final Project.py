@@ -13,7 +13,7 @@ def display_result(number_of_items, total_price):
     except ZeroDivisionError:
         print("Division by Zero because of the variable is zero")
         raise SystemExit
-        
+
 
 def display_plant(common, botanical, zone, light, price):
     text = "{0} ({1}) - {2} - {3} - {4}"
@@ -54,8 +54,7 @@ def list_plants(filename):
                 if re.search("COMMON", line):
                     common.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("BOTANICAL", line):
-                    botanical.append
-                    (line[line.find(">") + 1:line.find("/") - 1])
+                    botanical.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("ZONE", line):
                     zone.append(line[line.find(">") + 1:line.find("/") - 1])
                 if re.search("LIGHT", line):
