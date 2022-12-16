@@ -13,9 +13,6 @@ def display_result(number_of_items, total_price):
     except ZeroDivisionError:
         print("Division by Zero because of the variable is zero")
         raise SystemExit
-    except AssertionError:
-        print("Error: Missing or bad data.")
-        raise SystemExit
         
 
 def display_plant(common, botanical, zone, light, price):
@@ -34,6 +31,9 @@ def process_calculation(common, botanical, zone, light, price):
         display_result(number_of_items, total_price)
     except IndexError:
         print()
+        print("Error: Missing or bad data.")
+        raise SystemExit
+    except AssertionError:
         print("Error: Missing or bad data.")
         raise SystemExit
 
