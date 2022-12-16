@@ -62,7 +62,7 @@ def list_plants(filename):
                 if re.search("PRICE", line):
                     price.append(line[line.find(">") + 1:line.find("/") - 1])
     except FileNotFoundError:
-        msg = "the file " + filename + " is not found"
+        msg = "File is Missing"
         print(msg)
     else:
         process_calculation(common, botan, zone, light, price)
